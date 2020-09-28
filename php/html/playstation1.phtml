@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="../css/play.css">
+  <title><?= $title ?></title>
+</head>
+<body class="body--play1">
+  <header class="entete">
+    <nav>
+      <ul class="list--links">
+        <li><a href="#composants">Composants</a></li>
+        <li><a href="#modeles">Modèles</a></li>
+        <li><a href="#accessoires">Accessoires</a></li>
+        <li><a href="#ventes">Ventes</a></li>
+        <li><a href="#prologue">Prologue</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <section id="composants">
+      <article class="processeurPrincipal">
+        <h1 class="title">Processeur principal</h1>
+        <p>Chip à architecture <span class="maj">Mips r3000a</span> fabriqué par <span class="maj">Mips</span> Technologies compatible (R3051) 32 bits <span class="maj">Risc</span> tournant à 33,8688 MHz. Le chip est fabriqué par <span class="maj">Lsi</span> Logic avec des technologies appartenant à Silicon Graphics. Le chip contient le Geometry Transformation Engine (Moteur de transformation de géométrie) et le Data Decompression Engine (Moteur de décompression de données). Il inclut plusieurs fonctions :</p>
+        <ul>
+          <li>Puissance de calcul de 30 <span class="maj">mips</span></li>
+          <li>Bande passante Bus à 132 Mbit/s</li>
+          <li>Cache d'instruction de 4 kio</li>
+          <li>Mémoire cache de 1 kio(non associatif, juste 1024 octets de <span class="maj">sram</span>)</li>
+        </ul>
+        <h2 class="title">Moteur de transformation de géométrie</h2>
+        <p>Ce moteur est inclus dans le processeur principal. Cela apporte des instructions mathématiques vectorielles utilisées pour les graphismes 3D. Il inclut plusieurs fonctions :</p>
+        <ul>
+          <li>puissance de calcul de 66 <span class="maj">mips</span>;</li>
+          <li>360 000 polygones bruts par seconde;</li>
+          <li>180 000 polygones texturés et éclairés par seconde.</li>
+        </ul>
+        <p>Sony a officiellement annoncé le compte des polygones à 1,5 million de polygones bruts par seconde et 500 000 polygones texturés et éclairés par seconde. Ces chiffres ont été donnés pour une utilisation dans des conditions optimales, et sont donc irréalistes dans des conditions normales.</p>
+        <h2 class="title">Moteur de décompression de données</h2>
+        <p>Ce moteur est intégré dans le processeur. Il est chargé de décompresser les contenus audio et vidéo. Le dispositif peut décoder trois macroblocs encodés en <span class="maj">rle</span> de taille 16×16, et peut faire tourner une <span class="maj">tcd</span> ainsi qu'assembler un macrobloc de taille 16×16 en <span class="maj">rvb</span>. Les données externes peuvent être transférées via un accès direct à la mémoire. Il est possible de réécrire une matrice en <span class="maj">tcd</span> et plusieurs paramètres additionnels, cependant le jeu d'instructions internes <span class="maj">mdec</span> n'a jamais été documenté. Il inclut plusieurs fonctions :</p>
+      </article>
+      <article class="item--comp">
+        <h1 class="title">Processeur graphique</h1>
+        <p>Cette puce est séparée du processeur et se charge de tous les graphismes en 2D, qui incluent les transformations des polygones 3D. Il inclut plusieurs fonctions :</p>
+        <ul>
+          <li>maximum de 16,7 millions de couleurs;</li>
+          <li>résolutions de 256×224 à 640×480 pixels;</li>
+          <li>frame buffer ajustable;</li>
+          <li>tables illimitées de consultation de couleur;</li>
+          <li>profondeur maximale de couleur de 24 bits;</li>
+          <li>maximum de 4000 sprites 8×8 pixels avec échelle et rotation individuelle;</li>
+          <li>émulation de fonds simultanés (pour le défilement);</li>
+          <li>ombrage plat ou Gouraud, et texture-mapping.</li>
+        </ul>
+      </article>
+      <article class="item--comp">
+        <h1 class="title">Processeur son</h1>
+        <p>Il inclut plusieurs fonctions:</p>
+        <ul>
+          <li>24 canaux <span class="maj">adpcm</span></li>
+          <li>Fréquence d'échantillonnage de 44,1 kHz, en 16 bits, stéréo.</li>
+          <li>Samples codés en <span class="maj">adpcm</span> 4 bits (ratio de compression de 1/4. Équivalent de 2 Mio de son <span class="maj">pcm</span> 16 bits stockés dans une <span class="maj">ram</span> de 512 kio)</li>
+          <li>Lecture de pistes CD-Audio</li>
+        </ul>
+      </article>
+      <article class="item--comp">
+        <h1 class="title">Mémoire</h1>
+        <ul>
+          <li><span class="maj">ram</span> principale : 2 Mio;</li>
+          <li><span class="maj">ram</span> vidéo : 1 Mio;</li>
+          <li><span class="maj">rom</span> : 512 kio (taille du <span class="maj">bios</span>)</li>
+          <li><span class="maj">ram</span> son : 512 kio;</li>
+          <li>mémoire <span class="maj">cd-rom</span> : 32 kio ;</li>
+          <li>système de calcul de la <span class="maj">rom</span> : 512 kio ;</li>
+          <li>les cartes mémoire PlayStation ont une <span class="maj">eeprom</span> d'une capacité de 128 kio.</li>
+        </ul>
+      </article>
+      <article class="itemp--comp">
+        <h1 class="title">Lecteur <span class="maj">cd-rom</span></h1>
+        <p>Il inclut plusieurs fonctions:</p>
+        <ul>
+          <li>double vitesse, avec une vitesse de transfert de données de 300 kio/s (2x);</li>
+          <li><span class="maj">xa</span> conforme au Mode 2 ;</li>
+          <li><span class="maj">cd-da</span> (CD-Digital Audio).</li>
+        </ul>
+      </article>
+    </section>
+    <section id="modeles">
+      <h1 class="title">Modèles de la Playstation 1</h1>
+      <article class="intro--mod">
+        <p>De l'année 1994 à l'année 2000, la Playstation est passée par plusieurs modèles. Le motif de cela est généralement des révisions et de corriger des soucis techniques que les consommateurs ont relevé par le modèle précèdent</p>
+      </article>
+      <article class="item--mod">
+        <h2 class="title">Modèle <span class="maj">scph</span>-1000</h2>
+        <p>Ce modèle a eu une Révision de type A avec une version 1.0 du <span class="maj">bios</span>(a noté que cette version est la plus ancienne de la Playstation). Le <span class="maj">bios</span> est bleu et est daté du 22/09/94. Ce numéro de modèle a vu le jour qu'au Japon, il a un <span class="maj">cd-rom</span> de faible qualité, pas de détecteurs de fermeture de capot, avec une sortie audio, vidéo et S-Vidéo séparée. Il a aussi un port parallèle et un port série.</p>
+      </article>
+      <article class="item--mod">
+        <h2 class="title">Modèle <span class="maj">scph</span>-1001</h2>
+        <p>Ce modèle a eu une révision de type B et est sortie(le 04/12/95) uniquement aux Etats-Unis. Son <span class="maj">bios a une version 2.2 et corrige le problème "disque non détecté". Pas de modification sur le lecteur <span class="maj">cd-rom</span>(de faible qualité donc) et toujours pas de détecteurs de fermeture de capot. La sortie S-Video n'est pas séparée sauf sur certaines consoles et a néanmoins toujours des ports parallèle et série séparées. Les sorties audio et vidéo sont toujours séparées aussi</p>
+      </article>
+      <article class="item--mod">
+        <h2 class="title">Modèle <span class="maj">scph</span>-1002</h2>
+        <p>Ce modèle a une version 2.0 du <span class="maj">bios</span>. Cette version corrige notamment le problème de lecture des cinématiques. Sortie le 10/05/95 en gris et uniquement en Europe. Comme les autres modèles, le lecteur <span class="maj">cd-rom</span> est de faible qualité, pas détecteurs de fermeture de capot et est propose en plus des autres modèles la possibilité de déjouer les protections avec un <span class="maj">cd</span> swap. Les sorties sont identiques au modèle précèdent.</p>
+      </article>
+      <article class="item--mod">
+        <h2 class="title">Modèle <span class="maj">scph</span>-3000</h2>
+        <p>Ce modèle a une version 1.1 du <span class="maj">bios</span> qui date du 22/01/1995. Le modèle n'a vu le jour qu'au Japon et ses sorties sont comme le modèle précèdent.</p>
+      </article>
+      <article class="item--mod">
+        <h2 class="title">Modèle <span class="maj">scph</span>-3500</h2>
+        <p>Comme pour son prédécesseur, ce modèle a les mêmes caractéristiques concernant les sorties(audio et vidéo). Par contre la version de son <span class="maj">bios</span> est beaucoup plus récente(la version 2.1 datant du 17/07/1995). Ce modèle a été aussi exclusivement au japonais.</p>
+      </article>
+      <article class="item--mod">
+        <h2 class="title">Modèle <span class="maj">scph</span>-5000</h2>
+        <p>Ce modèle a eu une révision de type C. Il possède une version 2.2 du<span class="maj">bios</span> qui date donc du 04/12/1995. Comme pour le modèle précédent, il a existé qu'au Japon. A partir de ce modèle, les sorties seront toujours les mêmes.(à savoir: des sorties audio et vidéo qui ne seront pas séparées, la sortie S-vidéo aussi mais on a toujours un port série et un port parallèle.).</p>
+      </article>
+      <article class="item--mod">
+        <h2 class="title">Modèle <span class="maj">scph</span>-5500</h2>
+        <p>Ce modèle est quasi-identique que le modèle précédent. Ce qui les différencie est la version du <span class="maj">bios</span> qui est inédite et est la 3.0(elle date du 09/09/1996). Le modèle est toujours exclusif au japonais.</p>
+      </article>
+      <article class="item--mod">
+        <h2 class="title">Modèle <span class="maj">scph</span>-5501</h2>
+        <p>Ce modèle est exactement le même que le 5500 sauf qu'il est sorti aux Etas-Unis.</p>
+      </article>
+      <article class="item--mod">
+        <h2 class="title">Modèle <span class="maj">scph</span>-5552</h2>
+        <p>Même chose que le modèle 5501 mais est sorti en Europe.</p>
+      </article>
+      <article class="item--mod">
+        <h2 class="title">Modèles <span class="maj">scph</span>-7000 et 7003</h2>
+        <p>Ces deux modèles ont les mêmes caractéristiques. La différence entre eux , est la version du <span class="maj">bios</span>(4.0 pour le modèle 7000 et 3.0 pour le modèle 7003). A noter aussi que ces deux modèles sont exclusifs au Japonais.</p>
+      </article>
+      <article class="item--mod">
+        <h2 class="title">Modèle <span class="maj">scph</span>-7001</h2>
+        <p>Ce modèle est identique au modèle 7000 sauf qu'il est sortie exclusivement aux Etas-Unis. On peut aussi ajouter que la version du <span class="maj">bios</span> est la version 4.1.</p>
+      </article>
+      <article class="item--mod">
+        <h2 class="title">Modèle <span class="maj">scph</span>-7002</h2>
+        <p>Modèle identique au modèle 7001 apparu aux Etats-Unis sauf qu'il est sortie en Europe.</p>
+      </article>
+      <article class="item--mod">
+        <h2 class="title">Modèle <span class="maj">scph</span>-7501 et 7502</h2>
+        <p>Les deux modèles ont une version 4.1 du <span class="maj">bios</span>. Les sorties audio,vidéo et S-Vidéo ne sont pas séparées. Ils ont aussi chaucun un port parallèle et un port série. La seule différence entre ces deux modèles est que le 7501 est sortie uniquement aux Etats-Unis et le modèle 7502 est sortie uniquement en Europe.</p>
+      </article>
+      <article class="item--mod">
+        <h2 class="title">Modèle <span class="maj">scph</span>-9001 et 9002</h2>
+        <p>Les deux modèles ont des caractéristiques identique aux modèles 7501 et 7502.(comme précédemment, le modèle 9001 est le modèle américain et le modèle 9002, est le modèle européen). A noter que la différence entre ces deux "générations" est le fait que les modèles 9001 et 9002 sont bleues alors que les modèles 7501 et 7502 sont gris.</p>
+      </article>
+      <article class="item--mod">
+        <h2 class="title">Modèle <span class="maj">scph</span>-100, 101 et 102</h2>
+        <p>Ces modèles sont ensembles car on va voir qu'il n'y a que très peu de différence entre eux. On peut noter déjà qu'ils ont une révision de classe "Ps One". La version du <span class="maj">bios</span> change d'un modèle à l'autre. Le modèle <span class="maj">scph</span>-100 est le modèle Japonais et a une version 4.3 du <span class="maj">bios</span>. Ce modèle apporte une pointe de fraicheur à la console car elle est redesigné et est plus petite. De plus, les ports manettes et cartes mémoires sont intégrés à la carte mère. Du côté des sorties et des ports, cela n'a pas changé(sortie audio,vidéo, et S-Vidéo non séparées et ont un port parallèle et un port série). Enfin, la console est bleue. Le modèle <span class="maj">scph</span>-101 est le modèle américain et a juste une version différente(la 4.5) du <span class="maj">bios</span>. Le modèle <span class="maj">scph</span>-102 est le modèle européen avec une version 4.4 du <span class="maj">bios</span>.</p>
+      </article>
+      <article class="item--mod">
+        <h2 id="netyaroze" class="title">Version Net Yaroze</h2>
+        <p>Net Yaroze est une autre version de Playstation qui a été produite. Elle était plus onéreuse que la première PlayStation, noire au lieu du gris habituel, et le plus important est qu'elle était livrée avec des outils et guides qui permettaient de programmer des jeux et applications pour PlayStation sans posséder une suite complète de développeur, qui coûtait bien plus cher (et qui était disponible uniquement pour les développeurs certifiés). La Net Yaroze n'inclut pas les mêmes outils qu'une suite complète : par exemple, les bibliothèques fournies ne permettent pas d'utiliser la fonctionnalité vibreur, le multitap ou le décodeur MPEG. La Net Yaroze possède trois modèles(chaque modèle a les mêmes caractéristiques. La différence est qu'ils ne sont pas sorties dans la même région du monde.).</p>
+        <h3 class="title">Modèle <span class="maj">dtl</span>-H3000</h3>
+        <p>Ce modèle est sorti seulement au Japon. D'apparence originale(en plastique brossé noir), ce modèle a une sortie audio et vidéo séparées. Il possède aussi un port parallèle et un port série. Par contre, il n'a pas de sortie S-Vidéo séparée. Il est le premier modèle de la <a href="netyaroze">Net Yaroze</a>.</p>
+        <h3 class="title">Modèle <span class="maj">dtl</span>-H3001</h3>
+        <p>Ce modèle n'est pas différent du modèle précédent. Il est juste sortie aux Etas-Unis seulement.(Ceci est juste une sorte de zone: le dernier chiffre correspond à une région spécifique, ici le 1 correspond à la région "Etats-Unis" alors que le "0" du modèle précédent correspond à la région du "Japon" tandis que le "2", lui, correspond à la région "Europe","Australie" et "Nouvelle-Zélande", ce sera le cas du modèle suivant)</p>
+        <h3 class="title">Modèle <span class="maj">dtl</span>-H3002</h3>
+        <p>Ce modèle n'est pas différent du modèle précédent. Il est juste sortie en Europe.(L'explication de "où est la spécificité" est faite <a href="">ici</a>)</p>
+      </article>
+      <article class="item--mod">
+        <h2 class="title">PSone</h2>
+        <img src="../img/psone.png" alt="image playone">
+        <p>La PSone est une version redessinée de la PlayStation. Elle est environ un tiers plus petite que le premier modèle (38 mm × 193 mm × 144 mm contre 45 mm × 260 mm × 185 mm). Elle est sortie fin septembre 2000 (au prix de 790 FF), peu avant le lancement de la PlayStation 2 (elle servira de PlayStation d'entrée de gamme pendant cette période, et ce jusqu'en 2006). La PSone est entièrement compatible avec les jeux de la PlayStation, elle est fournie avec un pad Dual Shock. Le modèle a été distribué à 28,15 millions d'exemplaires3.
+
+          Il existait trois différences entre la PSone et l'originale, la première étant une nouvelle esthétique, la deuxième un changement de l'interface du menu d'accueil, et la troisième l'ajout d'une protection contre les modchips en changeant les circuits internes et en rendant les modchips d'anciennes générations inutilisables. La PSone n'intègre plus le port série original de la PlayStation, qui permettait à plusieurs consoles d'être connectées pour un jeu multijoueur sur plusieurs téléviseurs, ou encore pour un modchip externe. Sony a également sorti un écran LCD et un adaptateur allume-cigare pour utiliser ce modèle en voiture. La production est arrêtée en 2006</p>
+        </article>
+      </section>
+
+      <section id="accessoires">
+        <h1 class="title">Accessoires de la Playstation 1</h1>
+        <article class="item--access">
+          <h2 class="title">Manette de la Playstation 1</h2>
+          <img src="../img/manetteplay1.jpg" alt="manette">
+          <p>La manette de la Playstation 1 est de la même couleur que la console(grise). Elle a aussi différentes touches(le carré, le triangle, le cercle, et la croix). Elle possède deux joysticks, une touche start, select et ANALOG(qui sert à activer les joysticks sur certains jeux où ils n'étaient pas activés par défaut). Enfin, elle a aussi les touches L1, L2, R1, R2 et les touches directionnelles. On peut aussi ajouter que la manette est filaire.</p>
+        </article>
+        <article class="item--access">
+          <h2 class="title">Carte mémoire de la Playstation 1</h2>
+          <img src="../img/memorycard-play1.jpg" alt="memory card">
+          <p>La carte mémoire de la Playstation 1 sert comme son nom l'indique à sauvegarder ses données de jeux. A partir d'elle, on pourra charger nos données et reprendre le jeu là où on l'avait laissé la fois dernière.</p>
+        </article>
+        <article class="item--access">
+          <h2 class="title">Câbles de la Playstation 1</h2>
+          <img src="../img/cable.jpg" alt="cablage">
+          <p>Voici ci-dessus les câbles pour la Playstation 1. A noter qu'ils seront les mêmes pour la Playstation 2 et 3</p>
+        </article>
+      </section>
+
+      <section id="ventes">
+        <article class="item--ventes">
+          <h1 class="title">Ventes</h1>
+          <p>102,49 millions d'exemplaires de PlayStation ont été distribués en mars 2007. Première console de salon de l'histoire à avoir dépassé la barre symbolique des 100 millions d'unités, cette performance a été franchie en mai 2004, neuf années et six mois après le lancement de la console. C'est alors un record dans l'histoire de consoles de salon (la PlayStation 2 fera mieux ensuite). La console est commercialisée dans plus de 120 pays et régions à travers le monde. Les chiffres se répartissent comme suit selon les régions : 20.72 millions au Japon (et Asie), 39.67 millions en Amérique du Nord et 39.61 millions en Europe (et autres régions <span class="maj">pal</span>). Au 1er janvier 1997, 12 millions de PlayStation se sont écoulées à travers le globe (contre 7 millions de Saturn, sa principale concurrente de l'époque avec la Nintendo 64). Au 1er janvier 1998, 28 millions de PlayStation se sont écoulées à travers le globe contre 9,5 millions de Saturn. Au 1er janvier 1999, 43 millions de PlayStation se sont écoulées à travers le globe contre 15 millions de Nintendo 64.</p>
+
+
+          <!-- Tableau -->
+
+          <table>
+            <!-- Titre du tableau -->
+
+            <caption>Le bilan des ventes de la Playstation depuis son lancement:</caption>
+
+            <!-- En-tête du tableau -->
+
+            <thead>
+              <tr>
+                <th class="title title--tab"rowspan="3"><span class="maj" >sony</span> Gaming Division</th>
+                <th class="title title--tab" rowspan="3">En millions</th>
+                <th class="title title--tab" colspan="4">Total<br>(Année Civile)
+                  <tr>
+                    <th class="title" rowspan="2">Matériel Distribué</th>
+                    <th class="title" rowspan="2">Cumul</th>
+                  </th>
+                </tr>
+              </tr>
+            </thead>
+
+            <!-- pied du tableau -->
+
+            <tfoot>
+              <tr>
+                <th>Playstation</th>
+                <th>En millions</th>
+                <th colspan="2">Cumul</th>
+              </tr>
+              <tr>
+                <th rowspan="2">Total<br>jusqu'au 31 mars 2012</th>
+                <th rowspan="2">Software</th>
+                <th colspan="2" rowspan="2">962(Sell-in)</th>
+              </tr>
+            </tfoot>
+
+            <!-- Corps du tableau -->
+
+            <tbody>
+              <tr>
+
+              </tr>
+              <tr>
+                <td>1994</td>
+                <td class="text--tab">Hardware</td>
+                <td>0.3</td>
+                <td>0.3</td>
+              </tr>
+              <tr>
+                <td>1995</td>
+                <td class="text--tab">Hardware</td>
+                <td>3.1</td>
+                <td>3.4</td>
+              </tr>
+              <tr>
+                <td>1996</td>
+                <td class="text--tab">Hardware</td>
+                <td>6.9</td>
+                <td>10.3</td>
+              </tr>
+              <tr>
+                <td>1997</td>
+                <td class="text--tab">Hardware</td>
+                <td>17.9</td>
+                <td>28.2</td>
+              </tr>
+              <tr>
+                <td>1998</td>
+                <td class="text--tab">Hardware</td>
+                <td>22.5</td>
+                <td>50.7</td>
+              </tr>
+              <tr>
+                <td>1999</td>
+                <td class="text--tab">Hardware</td>
+                <td>21.12</td>
+                <td>71.82</td>
+              </tr>
+              <tr>
+                <td>2000</td>
+                <td class="text--tab">Hardware</td>
+                <td>7.79</td>
+                <td>79.61</td>
+              </tr>
+              <tr>
+                <td>2001</td>
+                <td class="text--tab">Hardware</td>
+                <td>9.68</td>
+                <td>89.29</td>
+              </tr>
+              <tr>
+                <td>2002</td>
+                <td class="text--tab">Hardware</td>
+                <td>5.93</td>
+                <td>95.22</td>
+              </tr>
+              <tr>
+                <td>2003</td>
+                <td class="text--tab">Hardware</td>
+                <td>4.0</td>
+                <td>99.22</td>
+              </tr>
+              <tr>
+                <td>2004</td>
+                <td class="text--tab">Hardware</td>
+                <td>2.51</td>
+                <td>101.73</td>
+              </tr>
+              <tr>
+                <td>2005</td>
+                <td class="text--tab">Hardware</td>
+                <td>0.76</td>
+                <td>102.49</td>
+              </tr>
+              <tr>
+                <td rowspan="2">Total<br>jusqu'au 31 mars 2012</td>
+                <td class="text--tab" rowspan="2">Hardware</td>
+                <td rowspan="2">102.49<br>(Sell-in)</td>
+                <td rowspan="2"></td>
+              </tr>
+            </tbody>
+          </table>
+        </article>
+      </section>
+      <section id="prologue">
+        <article class="item--prologue">
+          <h1 class="title">Prologue</h1>
+          <p>En 1985, Nintendo avait travaillé sur la conception d'un lecteur supportant des disquettes pour la Famicom, le Famicom Disk System, mais des problèmes sont survenus. La nature magnétique réinscriptible de ces disquettes en faisait un support facilement effaçable (provoquant ainsi une baisse sensible de la durabilité), et exposé au danger de la contrefaçon. Par conséquent, lorsque sont mis au point les différents standards de CDROM, Nintendo est très intéressé et demande à Sony de l'aider à développer un lecteur de CD-ROM additionnel pour sa future console SNES, sous le nom de SNES-CD. Le choix de Sony par Nintendo fut facilité car ceux-ci étaient déjà en collaboration dans la conception de la SNES. En effet, c'est Ken Kutaragi, futur "père de la Playstation", qui s'était chargé du développement du processeur sonore SPC-700 chez Sony. Nintendo, très satisfait de la qualité de ce processeur et du travail de Kutaragi, intégra cette puce dans sa console SNES. Un accord fut signé en 1988 pour le développement du SNES-CD, et le travail commença.
+            En 1991, le SNES-CD est annoncé par Sony au CES de Las Vegas au mois de juin. Cependant, quand le président de Nintendo Hiroshi Yamauchi a relu le contrat original entre Sony et Nintendo, il a réalisé que l'accord passé ne sécurisait pas assez le droit de licence que Nintendo appliquait alors aux éditeurs pour chaque cartouche produite, ainsi que les droits sur la technologie produite. Yamauchi était furieux. En effet, au lieu d'annoncer leur association le jour de la conférence de Nintendo au CES, le directeur de la filiale américaine Howard Lincoln est monté sur la scène et révéla qu'ils étaient maintenant en partenariat avec Philips. Howard Lincoln et Minoru Arakawa se sont rendus au siège de Philips en Europe, sans en informer Sony, et ont formé une alliance d'une nature totalement différente : une alliance qui donnerait le pouvoir total à Nintendo sur toutes les licences sur les futures machines de Philips.
+            L'annonce du CES fut un véritable choc. Non seulement ce fut une énorme surprise, mais cela a été perçu par beaucoup dans la communauté des affaires japonaises comme une trahison : une compagnie japonaise snobant une autre compagnie japonaise en faveur d'une firme européenne était absolument impensable. Après l'effondrement du projet commun, Sony pensa arrêter les recherches, mais finalement, la compagnie décida de réutiliser tout ce qui avait été développé en commun avec Nintendo pour en faire une console à part entière. Des contacts sont même établis avec Sega aux Etats-Unis, mais la maison-mère au Japon refuse toute collaboration. Cette décision motiva Nintendo à poursuivre Sony pour rupture de contrat devant la cour fédérale des États-Unis, et tenta d'obtenir une interdiction de commercialisation de la Play Station, avec comme argumentation que Nintendo possédait les droits du nom. Le juge fédéral a finalement refusé l'interdiction. Ainsi, en octobre 1991, le premier modèle de la nouvelle Sony Play Station a été révélé ; en théorie, environ 200 machines de ce type furent seulement produites.
+
+            Malgré leurs divergences et rancœurs, les deux sociétés espèrent trouver des intérêts commerciaux et industriels communs. Sony n'est pas forcément prêt à prendre le risque de se lancer seul sur ce marché, et Nintendo ne veut pas rater l'occasion de profiter d'un succès potentiel du projet de Sony, de plus sans devoir prendre en charge les coûts de fabrication de cette console. D'autant que le développement du SNES-CD avance difficilement avec Philips, pour des raisons techniques. À la fin de l'année 1992, Sony et Nintendo essayent de trouver un accord pour que la Sony Play Station puisse conserver son port cartouche pour les jeux SNES, mais encore une fois il ne parviennent pas à se mettre d'accord sur la répartition des droits. Cependant, Sony réalisa que la technologie de la SNES commençait à montrer ses limites, et que la nouvelle génération de consoles était sur le point de voir le jour : les travaux commencèrent début 1993 pour renouveler le concept de la Play Station pour cibler la nouvelle génération de logiciels et de matériel. Sony eu alors des discussions avec Commodore afin de racheter la technologie de leur Amiga CD32 (dont le lecteur CD était déjà fabriqué par l'entreprise japonaise), mais elles n'aboutirent pas. Finalement, le port SNES fut retiré, l'espace entre les deux mots fut enlevé, et la PlayStation était née. Le logo PlayStation a été créé par Manabu Sakamoto, qui a aussi dessiné le logo des ordinateurs Sony VAIO.</p>
+          </article>
+        </section>
+      </main>
+    </body>
+    </html>

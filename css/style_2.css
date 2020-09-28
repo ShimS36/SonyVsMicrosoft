@@ -1,0 +1,92 @@
+/*
+/************************CSS microsoft-index.phtml  ********************************/
+.body--microsoftindex{
+  /* background-image: url("../img/fond_microsoft-index.jpg");
+  background-position: center; */
+}
+.bloc--microsoftindex{
+  position: fixed;
+  top: 21%;
+  left: 8%;
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+}
+ .bloc--consoles_2{
+  background-image: url("../img/microsoft-fond.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.bloc--present{
+  background-image: linear-gradient(-45deg, rgba(255,255,255,0.8) 0%, rgba(0,0,0,0.5) 50%, rgba(255,255,255,0.5) 50%, rgba(0,0,0,1) 100% );
+  margin-bottom: 12rem;
+}
+.title--present{
+  text-align: center;
+  padding: 2rem;
+}
+.title--consoles{
+  text-align: center;
+  padding: 2rem;
+}
+.link--present{
+  color: black;
+  font-size: 5rem;
+}
+.link--consoles{
+  color: limegreen;
+  font-size: 5rem;
+}
+.link--present:hover,
+.link--consoles:hover{
+  color: deepskyblue;
+  text-decoration: underline;
+}
+/************************CSS consoles_microsoft-index.phtml******************************/
+ .body--consoles{
+  background-image: url("../php/consolesfond.jpg");
+}
+.item--consoles{
+  display: inline-block;
+  border: dashed white;
+  border-radius: 70px;
+  margin-left: 10rem;
+  margin-top: 5rem;
+}
+.title--ps1{
+  background-color: white;
+  padding: 4rem 3rem;
+}
+.link--ps1{
+  color: grey;
+}
+.title--ps2{
+  background-color: black;
+  padding: 4rem 3rem;
+}
+.link--ps2{
+  color: skyblue;
+}
+.title--ps3{
+  background-color: black;
+  padding: 4rem 3rem;
+}
+.link--ps3{
+  color: white;
+}
+.title--ps4{
+  background-color: black;
+  padding: 4rem 3rem;
+  margin-left: 22rem;
+}
+.link--ps4{
+  color: 	#000080;
+}
+.title--ps5{
+  background-color: black;
+  padding: 4rem 3rem;
+}
+.link--ps5{
+  color: rgba(135,206,235,0.9);
+}

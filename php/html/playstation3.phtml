@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="../css/play.css">
+    <title><?= $title ?></title>
+  </head>
+  <body>
+      <header class="entete">
+        <nav>
+          <ul class="list--links">
+            <li><a href="#composants">Composants</a></li>
+            <li><a href="#modeles">Modèles</a></li>
+            <li><a href="#accessoires">Accessoires</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#systèmes">Systèmes</a></li>
+            <li><a href="#connect">Connectivités</a></li>
+            <li><a href="#bug">Bug et Piratage</a></li>
+            <li><a href="#ventes">Ventes</a></li>
+            <li><a href="#prologue">Succès et lancement</a></li>
+          </ul>
+        </nav>
+      </header>
+      <main>
+        <section id="composants">
+          <h1 class="title">Composants de la Playstation 3</h1>
+          <article class="item--comp">
+            <h1 class="title">Processeur graphique <span class="maj">rsx</span></h1>
+            <p>Le processeur graphique, baptisé <span class="maj">rsx</span>(Real Synthesizer), a été conçu par Nvidia en collaboration avec Sony. Il est basé sur l'architecture NV40 fonctionnant à 550 MHz. Le processeur emprunte beaucoup des technologies de la génération G70 & G71 avec:
+            <ul>
+              <li>24 unités de Pixel Shader (27 Flops par unité et par cycle - 356,4 Gflops)</li>
+              <li>8 unités de Vertex Shader (8 Flops par unité et par cycle - 44 Gflops)</li>
+            </ul>
+            Bien que ses Shaders ne soient pas unifiés comme ceux du <span class="maj">gpu</span> de la Xbox 360, le <span class="maj">rsx</span> offre une grande puissance de calcul sur les Shaders avec 400,4 Gflops (dédié).<br>
+
+            La puce est produite par l'usine Sony de Nagasaki avec une finesse de gravure de 90 nanomètres. Selon Nvidia, le <span class="maj">rsx</span> est plus performant que deux GeForce 6800 Ultra montées en <span class="maj">sli</span>. L'architecture et les spécifications sont en fait très proche du haut de gamme de l'époque, les GeForce 7 (7800 & 7900 <span class="maj">gtx</span>). L'interface de programmation graphique est propriétaire, mais se rapproche des spécifications d'Open<span class="maj">gl</span>-<span class="maj">es</span>. Le langage de shader utilisé est quant à lui le <span class="maj">cg</span>, développé par Nvidia. La <span class="maj">ram</span> vidéo utilise la technologie <span class="maj">gddr</span>3.
+            </p>
+            <h3>Passage au modèle Slim <span class="maj">cech</span>-2100A</h3>
+            <p>Modèle Slim <span class="maj">cech</span>-2100A:<br>
+              Pour accroître ses marges et gagner en « écolo-attitude », Sony a principalement modifié deux composants par rapport à la précédente version Slim <span class="maj">cech</span>-2000A :
+            <ul>
+              <li>Nouveau processeur <span class="maj">rsx</span> : il passe de 65 nm à 40 nm avec pour bénéfices majeurs une consommation de courant moindre, une température moins élevée et qui nécessite donc moins de refroidissement. C'est un moyen d'augmenter sa fiabilité qui réduira encore plus les risques de <span class="maj">ylod</span> (Yellow Light Of Death : panne dû à la loi interdisant le plomb dans les soudures, conduisant donc à un défaut lors des soudures faites sur le <span class="maj">rsx</span> ne supportant pas les températures pour pouvoir souder sans plomb. En sortie d'usine, certaines consoles avaient donc les billes qui faisaient contact entre la carte mère et le <span class="maj">rsx</span>, mais avec la corrosion des soudures au cours des années celles-ci ne faisant plus contact aboutissaient à une mise en sécurité de la console, soit le <span class="maj">ylod</span>).</li>
+              <li>Nouveau bloc d'alimentation : il pesait 815 grammes dans la <span class="maj">ps</span>3 Fat 60 Go des débuts, pour descendre à 442 grammes en <span class="maj">ps</span>3 Slim v1, et enfin parvenir à 412 grammes sur cette nouvelle version.</li>
+              <li>Nouveau bloc de refroidissement : poids et taille réduits (408 grammes, contre 545 grammes pour la <span class="maj">ps</span>3 Slim existante).</li>
+              <li>Suppression d'autres composants reliés au <span class="maj">rsx</span>.</li>
+            </ul></p>
+          </article>
+          <article class="item--comp">
+            <h1 class="title">Processeur <span class="maj">cell</span></h1>
+            <p>Le processeur central de la PlayStation 3 est un processeur <span class="maj">cell</span>conçu par <span class="maj">ibm</span>, en partenariat avec Sony et Toshiba, et dérivé du Power<span class="maj">pc</span>. Outre son utilisation pour la <span class="maj">ps</span>3, le Cell est utilisé sur des serveurs d'applications. Le consortium à l'origine de sa création envisage aussi de l'intégrer dans de nombreux dispositifs de haute technologie comme les prochaines générations de télévisions à haute définition ou encore les lecteurs de salon Blu-ray, etc. Il est aussi optimisé pour la 3D en intégrant à chaque <span class="maj">spe</span>(s) une unité <span class="maj">sp</span> Graphique (<span class="maj">simd</span> 128 bits entièrement pipeliné avec ajout de multiplication et accumulation d'instructions). Le <span class="maj">cell</span> est à l'origine gravé en 90 nm. Depuis 2007 et l'introduction du modèle 40 Go, la finesse de gravure est passée à 65 nm37. La finesse de gravure est réduite à 45 nm en 2009 avec la sortie de la <span class="maj">ps</span>3 Slim, pour améliorer encore les coûts de production et la durée de vie de la <span class="maj">ps</span>3.</p>
+            <p>Le processeur est à l'origine composé de 8 <span class="maj">spe</span>. Cependant, le Cell présent au sein de la PlayStation 3 n'en possède que 7 d'activés (par souci de rendement en usine). La puissance théorique de ce <span class="maj">cpu</span> est de 230,4 <span class="maj">gflops</span> pour les calculs de simple précision à virgule flotante et de 100 <span class="maj">gflops</span> avec une double précision. Parmi ces 7 <span class="maj">spu</span> réellement fonctionnels, 1 est réservé à l'<span class="maj">os</span>. Par conséquent, les développeurs ont accès à 6 <span class="maj">spe</span>. Plusieurs éléments caractérisent ce processeur. Son rendement (flops) par watt consommé et par transistor extrêmement haut, qui en fait encore actuellement l'une des plus puissantes architectures de processeur ; l'écart entre les performances théoriques et les performances réelles est très faible, et bien qu'ils soient complexes, il a été démontré que les <span class="maj">spe</span> sont capables d'atteindre quasiment 100 % de leurs performances théoriques, ce qui n'est pas le cas des <span class="maj">cpu</span> classiques de type General-purpose-unit.</p>
+            <p>Le rendement et l'efficacité du Cell sont deux grandes caractéristiques de ce processeur, et sont bien plus pertinentes que la puissance brute elle-même.
+            Toutefois, la complexité de programmation des processeurs Cell, même par les programmeurs de Sony, fait que le résultat de cette puissance ne s'est jamais montré à l'écran.</p>
+          </article>
+          <article class="item--comp">
+            <h1 class="title">Mémoire</h1>
+            <p>La PlayStation 3 possède 256 Mo de mémoire <span class="maj">gddr</span>3 assigné au <span class="maj">rsx</span> et 256 Mo de <span class="maj">xdr</span> <span class="maj">dram</span> en mémoire principale. Le <span class="maj">rsx</span> peut néanmoins utiliser n'importe quelle zone mémoire pour ses calculs lui donnant virtuellement accès au 512 Mo. Le Cell peut lui aussi accéder à la mémoire du <span class="maj">rsx</span>.</p>
+            <table>
+              <!-- Titre du tableau -->
+
+              <caption>Caractéristique électronique du processeur de la console:</caption>
+
+              <!-- En-tête du tableau -->
+
+              <thead>
+                <tr>
+                  <th>Processeur</th>
+                  <th>256<span class="maj">mb</span> <span class="maj">xdr</span></th>
+                  <th>256MB <span class="maj">gddr</span>3</th>
+                </tr>
+              </thead>
+
+              <!-- Corps du tableau -->
+
+              <tbody>
+                <tr>
+                  <td class="text--tab">Cell Read</td>
+                  <td class="text--tab">16,8 <span class="maj">gb</span>/s</td>
+                  <td class="text--tab">16<span class="maj">mb</span>/s (15,6 <span class="maj">mb</span>/s à 650 MHz)</td>
+                </tr>
+                <tr>
+                  <td class="text--tab">Cell Write</td>
+                  <td class="text--tab">24,9 <span class="maj">gb</span>/s</td>
+                  <td class="text--tab">4 <span class="maj">gb</span>/s</span>/s à 650 MHz)</td>
+                </tr>
+                <tr>
+                  <td class="text--tab"><span class="maj">rsx</span> Read</td>
+                  <td class="text--tab">15,5 <span class="maj">gb</span>/s</td>
+                  <td class="text--tab">22,4 <span class="maj">gb</span>/s (20,8 <span class="maj">gb</span>/s à 650 MHz)</td>
+                </tr>
+                <tr>
+                  <td class="text--tab"><span class="maj">rsx</span> Write</td>
+                  <td class="text--tab">10,6 <span class="maj">gb</span>/s</td>
+                  <td class="text--tab">22,4 <span class="maj">gb</span>/s (20,8 <span class="maj">gb</span>/s à 650 MHz)</td>
+                </tr>
+              </tbody>
+            </table>
+          </article>
+          <article class="item--comp">
+            <h1 class="title">Blu-ray et connectique <span class="maj">hdmi</span></h1>
+            <p>La PlayStation 3 intègre le lecteur Blu-ray Disc, un des formats conçus pour la télévision à haute définition et appelé à remplacer le <span class="maj">dvd</span>. Un disque Blu-ray propose une capacité de stockage de 25 Go de données sur un disque simple couche et de 50 Go pour un disque double couche. Tous les jeux PlayStation 3 sont gravés sur des disques Blu-ray, et une mise à jour du firmware permet de lire des films Blu-ray 3D et d'activer la 3D sur les jeux <span class="maj">ps</span>3 compatibles depuis septembre 2010. Le lecteur lit aussi les Blu-ray vidéo, les <span class="maj">dvd</span> vidéo, les <span class="maj">cd</span> audio (tous les modèles) et les <span class="maj">sacd</span> (seulement pour les modèles 20 Go, 60 Go et 80 Go <span class="maj">ntsc</span>).</p>
+            <p>La console propose aussi une connectique <span class="maj">hdmi</span> 1.3 (une partie des fonctionnalités <span class="maj">hdmi</span> 1.4 est disponible afin de permettre la diffusion en 3D). Le <span class="maj">hdmi</span> (High Definition Multimedia Interface) est une interface audio/vidéo entièrement numérique capable de transmettre des flux non compressés. Elle a été conçue pour la transmission de données haute définition mais supporte n'importe quel format de vidéo, du 480i au 1080p.</p>
+          </article>
+          <article class="item--comp">
+            <h1 class="title">Disque dur</h1>
+            <p>La PlayStation 3 dispose d'un disque dur standard amovible en série, d'une capacité de 12, 20, 40, 60, 80, 120, 160, 250, 320 ou 500 Go selon le modèle. Le disque dur permet de stocker les sauvegardes de jeux, les jeux et les démos téléchargeables ainsi que les trophées de jeux et du contenu multimédia (musique, vidéo, image). L'installation des jeux sur le disque dur permet parfois de réduire sensiblement les temps de chargement. Il peut être facilement remplacé par un disque dur standard 2,5 pouces répondant à la norme S-<span class="maj">ata</span> d'une vitesse de rotation recommandée de 5400 tr/min (l'opération n'annule pas la garantie). Un disque dur externe formaté avec le système de fichiers <span class="maj">fat</span>32 peut également être connecté via les prises <span class="maj">usb</span> 2.0.</p>
+          </article>
+          <article class="item--comp">
+            <h1 class="title">Design</h1>
+            <p>Le design de la PlayStation 3 a été réalisé en interne, comme le veut la culture d'entreprise chez Sony. C'est Teiyu Goto, déjà responsable du design des modèles PlayStation et PlayStation 2 (ainsi que de la gamme d'ordinateurs <span class="maj">vaio</span>), qui l'a réalisé. Les premières ébauches ont été commencées fin 2004, six mois avant la première présentation de la console au salon de l'Electronic Entertainment Expo (E3) 2005. Parmi les buts poursuivis par le designer, il y a l'idée de donner de la présence à la console, un sentiment de luxe, de s'éloigner du look rectangulaire de la PS2 tout en préservant un lien de parenté, et de créer un objet « à part » que l'utilisateur aurait envie de poser sciemment dans une pièce. Une évolution importante comparé aux modèles précédents est la limitation des manipulations de la machine par l'utilisateur, ce qui « justifie » une coque luisante et donc plus salissante. Comme la <span class="maj">ps</span>2, la console peut être positionné indifféremment à l'horizontale ou à la verticale. Elle présente un lecteur « mange-disques » et des touches tactiles en façade.
+            </p>
+            <p>L'objectif était aussi de rassembler tous les éléments de la console (carte-mère, lecteur Blu-ray, disque dur, alimentation) dans un volume minimum. Les spécificités techniques finales de la machine ont été définies progressivement et la version finale de la console est sensiblement plus volumineuse que le prototype de l'E3 2005. Pour donner l'impression d'une machine compacte, les lignes ont été affinées au maximum, en taillant dans le superflu, même dans les éléments intégrés tels que le lecteur ou l'alimentation. La coque noire présente aussi une légère transparence pour alléger le volume. Pour évacuer la chaleur, les ingénieurs ont opté pour un grand ventilateur qui couvre quasiment la superficie de la carte mère (laquelle présente des trous d'aération), ce qui limite aussi le volume sonore (il tourne plus lentement).</p>
+            <p>La fonte de caractères, ou police, utilisée pour le logotype final de la console est celle des films Spider-Man, dont la licence appartient à Sony. Teiyu Goto explique que le précédent logo de la PlayStation ne se mariait plus avec les formes arrondies du nouveau modèle. En outre, créer une police spécifique comportait des risques au niveau qualitatif ainsi qu'un surcoût. Teiyu Goto précise enfin qu'utiliser la même fonte était aussi le souhait du président de Sony Computer Entertainment, Ken Kutaragi. À partir de mai 2009, des rumeurs ont circulé au sujet d'une nouvelle version de la console, au design particulièrement affiné. Sony n'a pas fait de commentaires au sujet de cette « <span class="maj">ps</span>3 Slim » à l'E3 2009 mais l'a confirmé lors de la Gamescom le 18 août 2009 à Cologne. La <span class="maj">ps</span>3 Slim, sortie à l'automne 2009, arbore un design bien plus sobre que la <span class="maj">ps</span>3 originale, avec une finition mate et un nouveau logo <span class="maj">ps</span>3 plus discret. La manette ne change pas, il s'agit toujours de la Dual Shock 3.
+            </p>
+          </article>
+        </section>
+        <section id="modeles">
+          <h1 class="title">Modèles de la PlayStation 3</h1>
+          <p>La console a été déclinée en deux configurations au lancement avec les modèles 60 Go et 20 Go en 2006. En 2007, les modèles 40 Go et 80 Go sont progressivement venus les remplacer. Un modèle 160 Go destiné aux utilisateurs en quête d'un espace de stockage supérieur est également sorti en 2008. Puis les modèles « Slim », de 120 Go et 250 Go (pour les packs contenant la console et un jeu), sont apparus. En septembre 2010, les modèles de 160 Go et de 320 Go remplacent ces derniers. Fin septembre 2012, Sony commercialise de nouveaux modèles de PlayStation 3 au design plus élégant, de taille réduite et disposant d'un disque dur d'une capacité de 500 Go. Des modèles sans disque dur avec une mémoire flash de 12 Go sont lancés en Europe en octobre 2012, ainsi que des modèles avec 250 Go de disque dur, exclusifs aux versions <span class="maj">ntsc</span>23.</p>
+          <article class="item--mod">
+              <h1 class="title">Modèles originaux</h1>
+              <img src="../img/ps3.jpg" alt="Play3 modèle original">
+              <p>Le modèle 60 Go est équipé de lecteurs de cartes mémoires Memory Stick, Secure Digital et CompactFlash, d'une connectivité réseau sans fil Wi-Fi et de quatre ports <span class="maj">usb</span>. Le modèle 60 Go européen propose une rétrocompatibilité <span class="maj">ps</span>2 semi logicielle. En effet, le modèle <span class="maj">ps</span>3 60go ne possède pas l'Emotion Engine mais garde le Graphic Synthesizer. Alors que les modèles 60 Go américain et japonais bénéficient de l'Emotion Engine et du Graphic Synthetizer afin d'obtenir une émulation <span class="maj">ps</span>2 presque totalement matérielle. La version européenne étant, elle, « allégée » afin de réduire les coûts de production. Sur le plan esthétique, cette version présente deux liserés argentés sur la face avant de la console. Cette version a été remplacé par le modèle 40 Go (et dérivés) en Europe, principalement dans une optique de réduction du prix de vente. La rétrocompatibilité de cette version avec les titres <span class="maj">ps</span>2, et le fait qu'elle ne soit plus distribuée dans le commerce en font un des modèles les plus recherchés. Elle a été vendue en pack avec MotorStorm et en starter pack (2 jeux, 2 manettes) avec MotorStorm + Resistance: Fall of Man, Heavenly Sword et Formula One Championship Edition. Les modèles 80 Go américains et japonais sont une déclinaison du modèle 60 Go <span class="maj">eu</span> avec un disque dur de capacité différente, et donc une rétrocompatibilité <span class="maj">ps</span>2 partielle. Il convient donc de ne pas confondre ces modèles avec les <span class="maj">ps</span>3 80 Go disponibles ultérieurement à la vente en Europe.
+              </p>
+              <p>Le modèle 20 Go est un modèle d'entrée de gamme seulement commercialisé au Japon et en Amérique du Nord mais pas en Europe. Il ne possède aucune connexion Wi-Fi et le seul endroit chromé est le symbole PlayStation 3. Le modèle 80 Go, en Europe, est une évolution du modèle 40 Go comportant un disque dur de plus grande capacité et des composants gravés plus finement (Le <span class="maj">rsx</span> est passé à une gravure à 65 nm au lieu de 90 nm à partir du modèle <span class="maj">cechl</span>, ce qui confère à la console moins d'échauffement). Ce modèle n'assure pas non plus la rétro-compatibilité des jeux PlayStation 2. Il a été proposé en pack avec les jeux Killzone 2, Little Big Planet, MotorStorm: Pacific Rift, Infamous, Ratchet and Clank: Quest for Booty.</p>
+              <p>Le modèle 40 Go est doté de deux ports <span class="maj">usb</span>, il ne propose pas de lecteur de cartes et ne prend pas en charge les jeux PlayStation 2 et les <span class="maj">sacd</span>. Ce modèle est capable de lire les jeux vidéo PlayStation 1. Sur le plan esthétique, il présente quelques différences mineures et est également proposé en coloris blanc céramique. Il a été proposé en pack avec les jeux Grand Theft Auto <span class="maj">iv</span>, Metal Gear Solid 4: Guns of the Patriots et en movie pack avec Spider-Man 3, 300, Harry Potter et l'Ordre du phénix et Casino Royale.</p>
+              <p>Le modèle 160 Go est doté des mêmes fonctionnalités que les modèles 40 Go et 80 Go mais propose un espace de stockage de 160 Go. Annoncé lors de la Games Convention 2008, il fait suite au lancement du Play<span class="maj">tv</span> sur le Vieux Continent. Il a été proposé en pack avec le jeu Pro Evolution Soccer 2009.
+
+              Ces modèles sont aussi appelés les Playstation 3 / <span class="maj">ps</span>3 "Fat", en opposition aux modèles dit "Slim" et "Super Slim"/"Ultra Slim" commercialisés ensuite.</p>
+          </article>
+          <article class="item--mod">
+            <h1 class="title">Modèles "Slim"</h1>
+            <img src="../img/ps3_slim.jpg" alt="play3 modèle slim">
+            <p>Le modèle 120 Go est un nouveau modèle annoncé par Sony le 24 août 2009 lors du salon gamescom de Cologne. La nouvelle PlayStation 3 (<span class="maj">ps</span>3 <span class="maj">cech</span>-2000) est 32 % plus petite, 36 % plus légère et consomme 34 % d'énergie en moins, tout en possédant les mêmes caractéristiques que les anciens modèles, d'où son appellation semi-officielle de PlayStation 3 / PS3 « Slim ». Elle est également équipée de la fonctionnalité Bravia Sync et d'un disque dur de 120 Go mais abandonne la possibilité d'installer un système Linux aux côtés du système propriétaire de Sony. Elle est lancée le 1er septembre 2009 dans la plupart des pays, et la production des anciens modèles est par la suite arrêtée.</p>
+            <p>Commercialisée en novembre 2009, la seconde "mouture", 250 Go, de la <span class="maj">ps</span>3 Slim présente les mêmes caractéristiques que la précédente, seule la capacité de son disque dur ayant été revue à la hausse, passant ainsi de 120 Go à 250 Go. À noter qu'à l'exception des États-Unis et du Canada, ce modèle n'est vendu que dans des packs, accompagné de jeux, de films ou d'accessoires parmi Coupe du monde de la <span class="maj">fifa</span> : Afrique du Sud 2010, <span class="maj">ufc</span> 2010 Undisputed, God of War <span class="maj">iii</span>, <span class="maj">mag</span>, Heavy Rain, Uncharted 2: Among Thieves, Assassin's Creed <span class="maj">ii</span>, Pro Evolution Soccer 2010, Gran Turismo 5, Killzone 2 et un pack en édition limitée Final Fantasy <span class="maj">xiii</span> (seulement disponible en Asie soit: en Corée, en Chine et au Japon).
+            </p>
+            <p>La production des versions <span class="maj">cech</span>-2000 (<span class="maj">cech</span>-2100 série à coque noire et <span class="maj">cech</span>-2500 série à coque blanche avec des disques durs de 160 Go et 320 Go) intervient dans l'été 2010. Les modèles Slim 160 Go et 320 Go ont été annoncés à la gamescom 2010 durant la conférence Sony. Ce sont les mêmes consoles que les "moutures" précédentes, mais avec un disque dur plus grand. Elles sont commercialisées le 15 septembre 2010.
+            Comme pour le modèle à 250 Go, les consoles à 320 Go se vendront en packs. Les packs disponibles contiendront la console et l'un des jeux parmi : <span class="maj">fifa</span> 11, Pro Evolution Soccer 2011, Medal of Honor, Assassin's Creed: Brotherhood, Little Big Planet 2, Gran Turismo 5, Les Sims 3, Killzone 3, Infamous 2, Uncharted 3 : L'Illusion de Drake, <span class="maj">fifa</span> 12 ou le PlayStation Move. Sony a annoncé, le 16 août 2011, une baisse de prix de l'ordre de 20 % portant le prix de la version 160 Go à 249 euros et à 299 euros pour le modèle 320 Go. Depuis novembre 2011, une édition limitée de la console avec une couleur blanche est disponible en Allemagne, en Australie, en France et au Royaume-Uni. Une édition de couleur argent (silver) est disponible en Suisse et en France.</p>
+          </article>
+          <article class="item--mod">
+            <h1 class="title">Modèles "Ultra Slim"</h1>
+            <img src="../img/ps3_ultraslim" alt="play 3 modèle ultra slim">
+            <p>Les modèles 120 Go, 250 Go et 500 Go sont officialisés par Sony le 19 septembre 2012. Cette famille de modèle est indifféremment appelé aussi bien « Super Slim », notamment par Sony, parfois orthographié "SuperSlim" sur le site web officiel du service après-vente de Sony Europe, que « Ultra Slim », notamment par les médias.</p>
+            <p>Cette nouvelle version de la console (qui remplace à terme le modèle "Slim" précédent) se caractérise par une diminution de la taille et un poids encore inférieur au modèle "Slim" (lancé en 2009) et présente quelques spécificités et nouveautés comme l'introduction des disques (<span class="maj">cd</span>, <span class="maj">dvd</span> et Blu-ray) qui se fait désormais par le dessus de la console (comme sur la première Playstation et sur la <span class="maj">ps</span>2 Slim) et non plus en façade, via un tiroir à commande mécanique et non plus électrique; le tiroir a la particularité d'être coulissant, ce qui le distingue des trappes rotatives des <span class="maj">ps</span>1 et <span class="maj">ps</span>2 Slim. En outre, ces modèles sont dépourvus du témoin lumineux d'activité Wi-Fi. En Europe, elles sont commercialisées avec deux capacités de mémoire interne: un modèle de 500 Go, équipé d'un disque dur, ainsi qu'un modèle de 12 Go, qui lui dispose d'une mémoire interne de type flash <span class="maj">ssd</span>.
+            </p>
+            <p>Ce modèle de 12 Go va paraître invraisemblable à son lancement, et est critiqué par la suite : en effet, d'une part cela s'oppose à la logique commerciale de proposer une capacité interne croissante à chaque nouveau modèle de <span class="maj">ps</span>3 appliqué jusqu'à présent par Sony, d'autre part il s'agit de la plus faible capacité de mémoire interne proposée de façon native par une <span class="maj">ps</span>3; surtout, l'utilisation normale d'une <span class="maj">ps</span>3 nécessite une capacité très importante, du fait des installations et mises à jour des jeux souvent obligatoires, le problème s'étant déjà posé avec les versions de <span class="maj">ps</span>3 Fat 20 Go et 40 Go qui ont été critiqués du fait de leur disque dur interne très vite saturé par les joueurs. De plus, les acheteurs non avertis, comme certains parents offrant une console à leurs enfants, seront d'ailleurs confrontés aux problèmes liés à la trop faible capacité de la version 12 Go. De même, certains jeux vont bloquer leurs mode en ligne sur les <span class="maj">ps</span>3 doté de la capacité native de 12 Go, comme <span class="maj">gta</span> V. En réalité, en Europe, les deux modèles de 12 Go et de 500 Go sont en apparence strictement identique ; ainsi cette version 12 Go est bien équipée d'une baie à disque dur, rendu librement accessible à l'utilisateur par Sony, comme d'ailleurs sur tous les autres modèles <span class="maj">ps</span>3, ce qui rend possible de lui insérer un disque dur; cette baie à disque dur est simplement vierge à la vente de la console; inversement, le modèle commercialisé comme étant une console 500 Go peut "devenir" une 12 Go si on lui ôte son disque dur. Des versions intermédiaires de 250 Go ont été commercialisées dans d'autres régions du monde que l'Europe. Pour compenser, un disque dur externe <span class="maj">usb</span> officiel Sony PlayStation, d'une capacité de 250 Go, a été commercialisé au prix de 90 € pendant environ les deux ans qui ont suivi le lancement de la <span class="maj">ps</span>3 Super Slim. Attention cependant: un seul "stockage principal" (un support externe de données pure, formaté en <span class="maj">fat</span>32, n'est pas un "stockage principal") est utilisable à la fois: en devenant le stockage principal de la <span class="maj">ps</span>3 Super Slim, tout support de stockage, aussi bien interne qu'externe, désactive la mémoire interne de 12 Go; inversement, en l'absence de d'autres sources de stockage principal, c'est la mémoire 12 Go qui s'active par défaut.
+            </p>
+          </article>
+        </section>
+        <section id="accessoires">
+          <h1 class="title">Accessoires</h1>
+          <article class="item--access">
+            <h1 class="title">Manettes Sixaxis et DualShock 3</h1>
+            <img src="../img/manettes-ps3.jpg" alt="manette ps3">
+            <p>La manette livrée à l'origine avec la PlayStation 3 se nomme « <span class="maj">sixaxis</span> », un palindrome en référence au capteur de mouvements à 6 degrés de liberté qu'elle intègre. Ce dispositif permet à la console de détecter l'orientation de rotation et l'accélération de translation de la manette sur les trois axes dimensionnels. La manette propose ainsi un mode d'interaction avec les jeux basés sur le mouvement. La fonction de détection est généralement utilisée pour réaliser des actions contextuelles, en complément des interactions classiques avec les boutons.
+
+            Avec l'implémentation de la technologie Bluetooth et d'une batterie intégrée, la manette devient sans fil. L'autonomie annoncée de la batterie est de 30 heures. Elle se recharge en reliant la manette à la console avec un câble <span class="maj">usb</span> (fourni). Quatre <span class="maj">led</span> situées sur la tranche permettent de distinguer les manettes entre elles. Jusqu'à 7 contrôleurs peuvent être gérés simultanément par la console.</p>
+            <p>La Sixaxis reprend l'apparence de la DualShock 2. L'ergonomie a cependant subi quelques évolutions. Un bouton avec le logo « PlayStation » placé au centre du contrôleur permet d'accéder à l'interface Xross Media Bar ou encore d'allumer/éteindre la console. Les boutons L2 et R2 situés sur la tranche ont été remplacés par des gâchettes analogiques dont l'amplitude permet un contrôle plus précis. L'angle d'inclinaison des joysticks analogiques a été légèrement augmenté afin d'accroître la sensibilité des commandes et de dynamiser la manipulation. Enfin, pour ces deux derniers éléments (touches L2/R2 et joystick analogique), la précision de réponse a été améliorée avec une quantité d'information passant de 8 à 10 bits.</p>
+            <p>La Sixaxis est dénuée de moteurs solénoïdes, lesquels permettent les vibrations. Nombreux joueurs et certains développeurs, comme Hideo Kojima, ont regretté le retrait de cette fonction. Sony a avancé des problèmes techniques pour justifier ce retrait. Un responsable, Phil Harrison, a également parlé de « fonctionnalité de la génération précédente », en opposition à la détection de mouvement. Le différend juridique opposant Sony à la société américaine Immersion, détentrice de brevets liés à la technologie de vibration de la DualShock, est vraisemblablement la cause de l'absence de vibrations. En mars 2007, Sony fait savoir avoir mis fin à leur litige avec Immersion et entrepris un nouveau partenariat, et en septembre 2007, la société annonce la sortie du modèle DualShock 3 qui intègre les vibrations. Ce modèle reprend par ailleurs toutes les caractéristiques du modèle Sixaxis. Il est sorti en novembre 2007 au Japon, en avril 2008 aux États-Unis et en juillet 2008 en Europe.
+            </p>
+            <p>L'une des différences entre la Sixaxis et la Dualshock 3 est donc que la Sixaxis ne vibre pas, au contraire de la Dualshock 3. L'absence des moteurs de vibration permet à la manette d'être plus légère que la Dualshock 3 (137 g contre 191 g). La seconde différence réside dans sa conception, en effet les 2 sticks analogiques ainsi que les gâchettes L1, L2, R1, R2 de la Sixaxis ayant tendance à rapidement se détériorer, Sony a donc renforcé la Dualshock 3 et remplacé le plastique fin et semi-transparent de la Sixaxis par un plastique mat plus épais.</p>
+          </article>
+          <article class="item--access">
+            <h1 class="title">PlayStation Move</h1>
+            <img src="../img/move-ps3.jpg" alt="playstationmove ps3">
+            <img src="../img/playstationeye-ps3.jpg" alt="playstationeye ps3">
+            <p>Présenté lors de l'E3 2009 le Motion Controller est une manette permettant la reconnaissance de mouvement, proche dans la forme de l'utilisation d'une Wiimote dont il s'inspire. Le 11 mars 2010, à la Game Developers Conference de San Francisco, est finalement révélé le nom final du Motion Controller : PlayStation Move. Il est distribué depuis le 15 septembre 2010 en Europe, le 17 septembre 2010 en Amérique du Nord et à partir du 21 octobre 2010 au Japon.</p>
+            <p>Il se place en concurrent d'une part, de la Wiimote de chez Nintendo et de l'autre du Kinect de chez Microsoft. Le PlayStation Move permet de jouer en se déplaçant, en faisant des mouvements, en pointant l'écran. Il est également possible d'utiliser deux PlayStation Move en même temps. Il s'utilise combiné avec le PlayStation Eye, qui sert à situer les joueurs dans l'espace, et permet une reconnaissance faciale. Pour promouvoir son périphérique Sony incite et tend à rendre son périphérique compatible avec des jeux dits « gamer » comme Killzone 3, ou Heavy Rain, titre sorti avant l'accessoire mais ayant bénéficié par la suite d'une mise à jour visant à le rendre jouable au PlayStation Move, au détriment de <span class="maj">dlc</span> annulés qui ne verront jamais le jour selon David Cage du studio Quantic Dream.</p>
+            <p>Malgré cette orientation qui voudrait réunir tous les publics autour de sa console de salon, ce n'est pas un secret que le PlayStation Move cherche à grappiller avant tout des bouts du terrain juteux de la Wii, à la vue de son succès commercial et de Wii Fit, notamment chez les jusqu’ici « non-joueurs », console de salon la plus vendue de l'époque dite next-gen bien que son hardware fut totalement obsolète dès sa sortie. Le public PlayStation n'étant pas principalement composé de joueurs occasionnels ou d'adeptes aux casual gaming, les jeux familiaux qui virent le jour depuis, du type Start The Party, Sports Champions ou Racket Sports confirment la tendance vers l'orientation très grand public insufflée, tout comme avec celle des jeux de dance comme Dance Dance Revolution ou Dance on Broadway, ou encore la catégorie fitness avec Get Fit With Mel B.</p>
+          </article>
+          <article class="item--access">
+            <h1>PlayStation <span class="maj">tv</span></h1>
+            <img src="../img/playtv-ps3.jpg" alt="playstation tv ps3">
+            <p>La PlayStation <span class="maj">tv</span> est un tuner / enregistreur numérique pour la PlayStation 3 disponible uniquement en Europe, dévoilé en août 2007 lors de la Games Convention de Leipzig. Le périphérique externe, sous la forme d'un boîtier qui se branche à la console via un port <span class="maj">usb</span>, permet de regarder, mettre en pause, et stocker sur le disque dur de la machine les émissions de télévision numérique terrestre diffusées au standard européen <span class="maj">dvb</span>-T (la <span class="maj">tnt</span> en France).</p>
+            <p>Équipé d'un double tuner <span class="maj">hd</span>, il permet notamment d'enregistrer un programme tout en en regardant un autre ou même en jouant. Le support de la <span class="maj">tnt</span> <span class="maj">hd</span> fut annulé en France mais une mise à jour d'avril 2009 le rend compatible avec les flux <span class="maj">mpeg</span>4, donc avec la <span class="maj">tnt</span> <span class="maj">hd</span> Française. L'enregistrement peut être programmé grâce au guide des programmes inclus avec l'adaptateur et il est possible de diffuser à distance sur la <span class="maj">psp</span> les contenus enregistrés.
+            </p>
+          </article>
+        </section>
+        <section id="services">
+          <h1 class="title">Services</h1>
+          <p>La console utilise un système d'exploitation propriétaire, pour lequel 72 Mo de mémoire vive du système sont réservés en permanence pour son fonctionnement. Le système peut être mis à jour par Internet (via le PlayStation Network) ou par support <span class="maj">usb</span>. L'environnement graphique est basé sur le <span class="maj">xmb</span>, déjà utilisé sur <span class="maj">psp</span>. Il propose neuf sous-menus : Utilisateur, Paramètres, Photo, Musique, Vidéo, Jeu, Réseau, PlayStation Network et Amis. Un dixième menu nommé <span class="maj">tv</span> est disponible avec l'accessoire Play<span class="maj">tv</span>.</p>
+          <article class="item--serv">
+            <h1 class="title">Media center</h1>
+            <p>La PlayStation 3 est un lecteur multimédia certifié <span class="maj">dlna</span>. Le système permet de visualiser des photos, d'écouter de la musique et de visionner les vidéos stockées sur le disque dur ou sur tout ordinateur connecté en réseau. Il supporte divers formats de fichiers vidéo (<span class="maj">mpeg</span>-1, <span class="maj">mpeg</span>-2, H.264, <span class="maj">mpeg</span>-4, DivX, Xvid), audio (<span class="maj">atrac</span>, <span class="maj">aac</span>, <span class="maj">mp</span>3, <span class="maj">wav</span>, <span class="maj">wma</span>) et image (<span class="maj">jpeg</span>, <span class="maj">tiff</span>, <span class="maj">gif</span>, <span class="maj">png</span>, <span class="maj">bmp</span>).
+
+            Le système d'exploitation est multitâche, permettant par exemple d'écouter de la musique tout en surfant sur le web ou en regardant un diaporama de photos.</p>
+          </article>
+          <article class="item--serv">
+            <h1 class="title">Navigateur Web</h1>
+            <p>La <span class="maj">ps</span>3 utilise par défaut une version évoluée du mini-navigateur NetFront d'Access, également utilisée sur <span class="maj">psp</span>. Le navigateur propose la plupart des fonctions ou attributs classiques (page de démarrage, signets, historique, taille des caractères, cookies, cache, JavaScript). Jusqu'à six pages Internet peuvent être ouvertes simultanément. L’interface a été adaptée à la manette Sixaxis mais il est aussi possible de connecter un clavier <span class="maj">usb</span> et une souris <span class="maj">usb</span> à la console pour faciliter la navigation, ou bien un PlayStation Move depuis le firmware 3.50.</p>
+          </article>
+          <article class="item--serv">
+            <h1 class="title">Linux</h1>
+            <p>Linux était officiellement disponible en téléchargement à partir de décembre 2006 via la distribution Yellow Dog Linux qui permet d'exécuter des applications développées par les utilisateurs (par exemple des émulateurs de jeux). Sony réalise ainsi son objectif de faire de la <span class="maj">ps</span>3 un centre de divertissement numérique à l'image du <span class="maj">pc</span>. D'autres distributions Linux telles que Ubuntu, Fedora, Debian ou Gentoo sont disponibles en version compatible <span class="maj">ps</span>3, ainsi que toutes les distributions prévues pour l'architecture Power<span class="maj">pc</span> 32 ou 64bits. Cependant, la <span class="maj">ps</span>3 slim ne permet pas l'installation d'un autre OS.</p>
+            <p>Toutefois, il n'est pas possible d'utiliser directement la carte graphique <span class="maj">rsx</span> de la console sous Linux, Sony ayant bridé son accès : il est donc nécessaire de s'appuyer sur d'autres ressources matérielles pour obtenir une accélération vidéo. L'accélération 3D utilisant les possibilités du processeur Cell est possible depuis janvier 2008 au sein du projet Gallium 3D, projet qui devait remplacer Mesa 3D à court terme.</p>
+            <p>Le 1er avril 2010, Sony sort la mise à jour 3.21 pour ses <span class="maj">ps</span>3, qui supprime la fonctionnalité « Other <span class="maj">os</span> » utilisée pour installer Linux ; officiellement, cette décision est prise pour éviter des problèmes de sécurité. S'ensuivra un recours collectif d'utilisateurs poursuivant Sony aux États-Unis : la possibilité d'installer Linux ayant été mis en avant par Sony, et ayant poussé des consommateurs à choisir la <span class="maj">ps</span>3 face à ses concurrents, les plaignants considèrent que l'entreprise nippone a violé les termes de son contrat envers les utilisateurs, et a tenté d'entraver une concurrence libre. Le 25 mai 2011, la Team Rebugs, auteur du <span class="maj">cfw</span> Rebug 3.55, sort 2 outils servant à réintégrer l'Other <span class="maj">os</span> sur les <span class="maj">ps</span>3 en <span class="maj">cfw</span> 3.55 rebug.
+            </p>
+          </article>
+          <article class="item--serv">
+            <h1 class="title">Blu-ray Disc et <span class="maj">dvd</span></h1>
+            <p>La PlayStation 3 lit les films au format Blu-ray. Pour bénéficier de la qualité optimale sur un téléviseur à haute définition, il est nécessaire d'utiliser un câble <span class="maj">hdmi</span>, vendu séparément. Un téléviseur ou moniteur compatible <span class="maj">hdcp</span> est nécessaire. Une télécommande Bluetooth est aussi proposée à part pour faciliter la navigation.<br>
+            Les films Blu-ray sont zonés selon le découpage géographique : Région A (États-Unis, Canada, Japon et Asie de l'Est), Région B (Europe, Afrique et tous les autres territoires <span class="maj">pal</span>) et Région C (Chine, Russie et le reste du monde). Le lecteur Blu-ray peut lire les différents formats de <span class="maj">dvd</span>. La console upscalle de très belle façon la résolution native des <span class="maj">dvd</span> jusqu'au 1080p, améliorant leur rendu sur les téléviseurs haute définition. Un autre atout de la PlayStation 3 est sa capacité à lire à partir du disque dur des fichiers vidéo haute définition en 50i (50 trames entrelacées par seconde), désormais complète et sans altération de la qualité d'image à partir du firmware v2.50 (15/10/2008). Cela en fait un lecteur <span class="maj">hd</span> de choix pour les vidéastes amateurs européens filmant dans le format High Definition Video (<span class="maj">hdv</span>) et recherchant un moyen simple et flexible de visualiser leurs créations. Dans les versions précédentes du firmware, la lecture de la vidéo 50i était réalisée par une conversion logicielle de 50i (en entrée) à 60i (en sortie), ce qui occasionnait une perte de définition et des saccades dans le rendu des vidéos.
+          </p>
+          </article>
+          <article class="item--serv">
+            <h1 class="title">Super Audio <span class="maj">cd</span></h1>
+            <p>Le Super Audio <span class="maj">cd</span> (<span class="maj">sacd</span>) est un format de disque optique mis au point par Sony et Philips en 1999. Il utilise une technologie de numérisation <span class="maj">dsd</span> (Direct Stream Digital) à très haute fréquence d'échantillonnage qui assure une meilleure cohérence de la phase du signal que le procédé <span class="maj">pcm</span> utilisé pour les formats audio-numériques plus courants (Compact Disc, <span class="maj">dat</span>…). Seuls certains modèles de la première génération de <span class="maj">ps</span>3 (la <span class="maj">fat</span>) supportent ce format : 20 Gb, 60 Gb et 80 Gb <span class="maj">ntsc</span> ainsi que les versions 60 Gb <span class="maj">pal</span> (tous sont compatibles avec les <span class="maj">dsd</span> Disc.).
+            </p>
+            <p>La meilleure façon de profiter du son multicanal du <span class="maj">sacd</span> est de raccorder la console à un ampli via un câble <span class="maj">hdmi</span>. Le signal d'un <span class="maj">sacd</span> est véhiculé par la prise mais pas le flux <span class="maj">dsd</span> présent sur le disque : la <span class="maj">ps</span>3 le convertit en <span class="maj">pcm</span> multicanal, nouvelle norme née avec la <span class="maj">hd</span> et popularisé par la console de Sony. Encore peu d'amplis savent traiter le signal <span class="maj">pcm</span> multicanal et tous ne disposent pas d'entrée <span class="maj">hdmi</span>. Les autres solutions de raccordement sont le câble <span class="maj">av</span> analogique (seules les pistes stéréo du <span class="maj">sacd</span> sont lues) et le cordon numérique optique (le signal multicanal est alors automatiquement converti en stéréo). Les détenteurs de <span class="maj">sacd</span> attendent donc qu'une mise à jour système ajoute la possibilité de faire transiter le flux <span class="maj">dsd</span> via le <span class="maj">hdmi</span> (sans conversion <span class="maj">pcm</span> multicanal) ou la sortie d'un cordon Multi Audio/Vidéo proposant 5+1 sorties analogiques pour brancher la <span class="maj">PS</span>3 comme une platine <span class="maj">sacd</span> classique.
+            </p>
+          </article>
+        </section>
+        <section id="systèmes">
+          <h1 class="title">Systèmes</h1>
+          <article class="item--syst">
+            <h1 class="title">PlayStation Network</h1>
+            <p>Le PlayStation Network (<span class="maj">psn</span>) est le service en ligne de la console. Il permet de jouer en ligne et d'accéder à la boutique PlayStation Store et à divers services de communication, d'informations et de loisirs. L'accès au <span class="maj">psn</span> est gratuit. Il est englobé par le Sony Entertainment Network (<span class="maj">sen</span>), depuis le mois de février 2012 dans le cadre de l'unification des comptes en ligne des clients de la société.</p>
+          </article>
+          <article class="item--syst">
+            <h1 class="title">PlayStation Store</h1>
+            <p>Le PlayStation Store est une boutique en ligne qui propose du contenu en téléchargement, gratuit et payant. Le service propose des jeux originaux, des classiques <span class="maj">ps</span>one et arcade, du contenu additionnel pour les jeux, des démos jouables, des bandes-annonces de jeux ou de films à venir en format Blu-ray ou au cinéma, des making of, des fonds d'écrans et des thèmes pour le <span class="maj">xmb</span>, le webzine Qore, des bandes originales de jeux, des applications, etc. Le contenu de la boutique varie en fonction des pays. Pour acheter du contenu, l'utilisateur doit alimenter son compte <span class="maj">psn</span> avec une carte bancaire ou une carte prépayée (disponible à présent en Europe depuis le mois de novembre). Un contrôle parental peut être exercé sur le compte afin de plafonner les dépenses et restreindre l'accès à certains contenus. Les prix sont affichés dans la monnaie réelle.</p>
+          </article>
+          <article class="item--syst">
+            <h1 class="title">PlayStation Home</h1>
+            <p>Le PlayStation Home est un projet de monde virtuel communautaire. Les utilisateurs créent un avatar et se retrouvent dans des environnements en 3D constitués d'espaces publics et privés afin de discuter, jouer et s'informer. Le logiciel était disponible en bêta ouverte le 11 décembre 2008, téléchargeable gratuitement depuis le PlayStation Network.
+
+            À l'heure actuelle, il est possible d'accéder à la version complète du home gratuitement, le soft a reçu un coup de lifting et permet aux utilisateurs de télécharger pendant le jeu n'importe quel salon représentant un jeu vidéo connu sur PlayStation 3, par exemple un salon consacré à Resident Evil 5 est disponible et bien d'autres. Le home est en perpétuelle évolution depuis sa sortie sur le PlayStation Store. Le service est fermé le 31 mars 2015, au total, 17 millions d’utilisateurs s'y seront inscrits, soit environ 15 % des possesseurs de <span class="maj">ps</span>3.</p>
+          </article>
+          <article class="item--syst">
+            <h1 class="title">Life with PlayStation</h1>
+            <p>Life with PlayStation est un service qui fournit des canaux de contenus dynamiques basés Web pouvant être parcouru par horaire et localité. L'interface est basée sur un globe terrestre que l'utilisateur explore. Live Channel propose les actualités et la météo. Le contenu est entre autres fournis par Google Actualités et The Weather Channel. Unique Village Channel est un projet consacré à l'« expérience de partage du sentiment de la communauté et de la culture ». L'application intègre le programme Folding@Home, qui fonctionne en parallèle et dispose d'un canal dédié. Life with PlayStation, disponible depuis le 18 septembre 2008, fut retiré le 6 novembre 2012 avec la sortie du firmware 4.30.</p>
+          </article>
+          <article class="item--syst">
+            <h1 class="title">VidZone</h1>
+            <p>VidZone est un service de vidéo à la demande qui permet de visionner librement des milliers de clips musicaux en lecture en continu depuis la <span class="maj">ps</span>3 (et la <span class="maj">ps</span>P avec la fonction de lecture à distance). Le service est disponible depuis le 11 juin 2009 en Allemagne, Australie, Espagne, France, Italie, Irlande et au Royaume-Uni, depuis le 26 novembre 2009 aux Pays-Bas, Portugal et en Autriche, depuis le 3 décembre 2009 en Suède, Norvège et Finlande et au Danemark, depuis le 10 décembre 2009 en Belgique, Suisse, Nouvelle-Zélande et au Luxembourg. Celui-ci fût interrompu le 31 mars 2017 après plus de 7 ans de fonctionnement.</p>
+          </article>
+        </section>
+        <section id="connect">
+          <h1 class="title">Connectivités</h1>
+          <article class="item--connect">
+            <h1 class="title">PlayStation Portable (<span class="maj">psp</span>)</h1>
+            <p>La <span class="maj">ps</span>3 propose une connectivité étendue avec la PlayStation Portable. Le transfert de fichiers multimédia (vidéos, musiques, images) de l'une à l'autre est possible par câble <span class="maj">usb</span>, Memory Stick et par Wi-Fi. Il est aussi possible de télécharger des jeux <span class="maj">ps</span>one sur la <span class="maj">ps</span>3 (via le PlayStation Network) et de les transférer ensuite sur <span class="maj">psp</span> pour y jouer (voir la liste de jeux <span class="maj">ps</span>one téléchargeables). La fonction de lecture à distance, le « Remote Play », permet aussi aux possesseurs de <span class="maj">psp</span> de consulter à distance le contenu numérique (vidéo, musique, photo) stockés sur le disque dur de la PlayStation 3 à partir de n'importe quel point d'accès sans fil à Internet. Il est également possible de jouer à distance à certains jeux <span class="maj">ps</span>3 ou aux jeux <span class="maj">ps</span>one insérés dans le lecteur de la <span class="maj">ps</span>3.
+
+            La PlayStation Portable peut aussi être utilisée comme un périphérique additionnel dans certains jeux <span class="maj">ps</span>3. Lors d'une démonstration à l'E3 2006, la <span class="maj">psp</span> était par exemple utilisée comme rétroviseur pour le jeu Formula One Championship Edition, ou alors la compatibilité entre Resistance 2 et Resistance: Retribution.</p>
+            <img src="../img/psp.jpg" alt="PlayStation Portable">
+          </article>
+          <article class="item--connect">
+            <h1 class="title">PlayStation Vita (<span class="maj">ps</span>Vita)</h1>
+            <p>Depuis la sortie de la <span class="maj">ps</span> Vita début 2012, un nouveau firmware a été déployé sur <span class="maj">ps</span>3 pour que cette dernière interagisse avec la nouvelle console portable. Il est possible de lire du contenu stocké sur la <span class="maj">ps</span>3 à distance sur une Vita connectée à Internet.</p>
+            <img src="../img/psvita.jpg" alt="PSVita">
+          </article>
+        </section>
+        <section id="bug">
+          <h1 class="title">Bug et Piratage</h1>
+          <p>Cette console est sortie aux 21ème siècles, les risques de sécurités et les pirates fleurissent de plus en plus et la PlayStation 3 avec sa connectivités n'a pas été épargné, j'ai voulu donc faire cette partie pour marquer le début d'une nouvelle ère dans le jeux vidéo. Cette console ramène une révolution avec elle, elle inclut des fonctionnalitées inédites comme ses rivales mais les risques sont accrues en contre partie, faites très attention.</p>
+          <article class="item--bug">
+            <h1 class="title">Bug du 1er mars 2010</h1>
+            <p>C'est à minuit, le 1er mars 2010, que le bug fait son apparition. L'erreur « 8001050F » est provoquée lors du lancement de jeux utilisant le système de trophées ainsi que des jeux <span class="maj">psn</span>. Les consoles <span class="maj">fat</span> (antérieures à 2009) sont touchées de plein fouet alors que les <span class="maj">slim</span> ont été épargnées. C'est l'horloge interne de la console qui est la cause de ce problème mondial, celle-ci voulait passer au 29/02/2010 au lieu du 01/03/2010 à cause d'un mauvais calcul des années bissextiles, ce qui entraina le blocage de tous les paramètres de sécurité par le processeur qui ne comprenait pas l'accès à une date qui n'existe pas, il considérait donc ceci comme un hack du système. Tous les achats du store sont ainsi passés en version d'essai et tout lancement de jeux réinitialisait les trophées acquis. Le problème se résout de lui-même le 02/03/2010, il suffisait d'attendre que l'horloge interne de la PlayStation 3 passe enfin au 01/03/2010 le jour suivant (donc le 02/03/2010) pour que toutes les sécurités mises en place à cause d'une date non prise en compte par le processeur se réinitialisent. Ce bug peut être comparé avec le bug de l'an 2000.
+            </p>
+          </article>
+          <h1 class="title">Piratage</h1>
+          <article class="item--bug">
+            <h1 class="title">Firmware 2.15</h1>
+            <p>Depuis mai 2008, il est possible de faire tourner du code non signé par Sony sur toutes les <span class="maj">ps</span>3, ce que seules les <span class="maj">ps</span>3 dites « debug » (machines de développement) permettaient jusque-là. Il faut pour cela installer un micrologiciel spécial, le « firmware 2.15 debug ». En effet, un firmware « debug » est un micrologiciel normalement réservé aux développeurs (chargés de debugger un jeu), et offrant donc beaucoup plus de possibilités que les firmwares normaux, dits firmwares « retail ». Pour installer le firmware « debug », il faut recourir à une astuce qui consiste à utiliser deux disques durs pour « faire croire » au système qu'il installe un firmware normal. Étant donné que ce firmware est la version 2.15, il faut un firmware 2.10 ou inférieur pour pouvoir l'installer (ou utiliser la <a href="#puceInfectus">puce Infectus</a> pour « downgrader » la console). Toutefois la plupart des fonctions dites "debug" ne sont pas fonctionnelles du fait que le firmware une fois installé avec cette manipulation est hybride (retail/debug).
+
+            L'installation de ce firmware empêche cependant de lire les disques Blu-ray (films uniquement), de se connecter à Internet et ne permet pas de lire des backups <span class="maj">ps</span>3 qu'ils soient stockés sur un disque dur ou un Blu-ray. Il ne permet donc que de dézoner la console pour lire les jeux <span class="maj">ps</span>1 et <span class="maj">ps</span>2 japonais ou américains. Cette faille a été comblée avec le firmware 2.16.</p>
+          </article>
+          <article class="item--bug">
+            <h1 class="title" id="puceInfectus">Puce Infectus</h1>
+            <p>La <span class="maj">ps</span>3 peut aussi recevoir la puce Infectus, première puce multi-console, fonctionnant à la fois sur la Wii, sur la Xbox 360, sur la <span class="maj">ps</span>2, et sur la <span class="maj">ps</span>3. La puce Infectus présente l'avantage d'être facilement reprogrammable pour prendre en compte n'importe quel firmware. Pour l'instant, elle sert uniquement à dumper ou downgrader sa <span class="maj">ps</span>3 (à la reprogrammer sur un firmware inférieur), mais elle pourrait peut-être servir à lancer des homebrews ou des backups (copies personnelles) si le code source de la puce (modchip) était modifié de façon à pouvoir le faire. Le lancement de backups se ferait quant à lui par le disque dur de la console car le système de reconnaissance des Blu-Rays originaux semble très complexe à contourner.</p>
+          </article>
+          <article class="item--bug">
+            <h1 class="title">Remplacement "à la volée"</h1>
+            <p>Une modification matérielle du lecteur Blu-ray permet la lecture de jeux imports ou copiés. Cette modification n'est cependant fonctionnelle que pour les jeux <span class="maj">ps</span>1 et <span class="maj">ps</span>2, mais est indépendante de la version du firmware de la console. La manipulation consiste à détourner manuellement l’arrivée électrique du moteur et de l’éjection des disques, afin d’effectuer un swap (remplacement à la volée), pour que le jeu soit lancé.</p>
+          </article>
+          <article class="item--bug">
+            <h1 class="title">Homebrews</h1>
+            À la mi-août 2007, Sephirothff, un hacker français, découvre la possibilité de lancer des programmes homebrews (programmes non officiels, « faits maison ») via un disque spécial « Swap Magic » sur les <span class="maj">ps</span>3 de première génération (60 Go version <span class="maj">eu</span>, ainsi que les versions 60 Go et 20 Go <span class="maj">jap</span> et <span class="maj">us</span>)90. Les programmes étant à la base créés pour la PlayStation 2, ceux-ci se lancent dans un premier temps via une clé <span class="maj">usb</span> sans interactions possibles, puis quelque temps plus tard, un pilote <span class="maj">usb</span> permettra de les utiliser plus facilement. Ifcaro, un hacker espagnol proposera plus tard un programme permettant de lancer des copies de jeux PlayStation 2 à partir d'un disque dur externe. Cette technique sera la première permettant de lancer des homebrews sur la PlayStation 3. Cette technique est toujours fonctionnelle.<br>
+            Depuis la mi-juillet 2008, il est possible de lancer des jeux homebrews (jeux non officiels, « faits à la maison ») sans aucune puce (modchip). Ces jeux sont programmés en Java et sont lancés à partir de la section vidéo car ils utilisent les « <span class="maj">bd</span> profile » 1.1 et 2.0 pour lancer ces codes Java. Cette « faille » a été corrigée dans le firmware 2.50.
+          </article>
+          <article class="item--bug">
+            <h1 class="title">PlayStation Jailbreak</h1>
+            <p>Le 20 août 2010, plusieurs sites web annoncent que la PlayStation 3 a été hackée grâce à un dongle <span class="maj">usb</span> disponible pour le grand public. Le site le commercialisant a mis en ligne plusieurs vidéos montrant les capacités du modchip, capable de copier un jeu depuis le support Blu-ray vers un périphérique externe (un disque dur par exemple) ainsi que de lancer ses backups sans le Blu-ray original inséré. Cette faille ne fonctionne que sur les firmwares 3.41 et inférieurs, elle a en effet été corrigée par Sony le 7 septembre 2010 via le firmware 3.42. La mise à jour est obligatoire pour pouvoir accéder au <span class="maj">psn</span> (donc au jeu en ligne), bénéficier des nouvelles fonctionnalités, ou jouer aux nouveautés telles que Medal of Honor. Sony a décidé d'intégrer le firmware 3.42 ou supérieur à toutes ses nouveautés. Le 21 septembre 2010, le firmware 3.50 vient encore plus renforcer la sécurité en désactivant les périphériques <span class="maj">usb</span> non approuvés. Officiellement, Sony explique cette décision par sa volonté de ne plus supporter les controlleurs <span class="maj">usb</span> contrefaits ou sans licence. Néanmoins depuis cette mise à jour, certaines manettes Mad Catz ou accessoires pour le jeu Guitar Hero ne fonctionneraient plus. Le 25 novembre 2010, le site du constructeur de la puce <span class="maj">psj</span>ailbreak annonce une mise à jour permettant la compatibilité avec le firmware 3.50 ainsi que le jeu en réseau et les jeux 3D. Mais en réalité cette mise à jour ne permet nullement de jailbreaker le firmware 3.50, elle permet seulement de le downgrader en 3.41 (et inférieur). Le 6 décembre 2010, Sony met à jour son firmware à la version 3.55, bloquant totalement le downgrade et rendant de fait le jailbreak impossible pour ses utilisateurs. Le Jailbreak est par la suite revenu grâce à Ps3Xploit en 2016 mais Sony a corrigé cette faille de sécurité en octobre 2018.</p>
+          </article>
+        </section>
+        <section id="ventes">
+          <h1 class="title">Ventes</h1>
+          <table>
+            <!-- Titre du tableau -->
+
+            <caption>Le bilan des ventes de la PlayStation 3 depuis son lancement :</caption>
+
+            <!-- En-tête du tableau -->
+
+            <thead>
+              <tr>
+                <th class="title title--tab"rowspan="3"><span class="maj" >sony</span> Gaming Division</th>
+                <th class="title title--tab" rowspan="3">En millions</th>
+                <th class="title title--tab" rowspan="3">Q1<br>(Avr-Jui)</th>
+                <th class="title title--tab" rowspan="3">Q2<br>(Jui-Sep)</th>
+                <th class="title title--tab" rowspan="3">Q3<br>(Oct-Dec)</th>
+                <th class="title title--tab" rowspan="3">Q4<br>(Jan-Mar)</th>
+                <th class="title title--tab" colspan="4">Total<br>(Année Fiscale)
+                  <tr>
+                    <th class="title" rowspan="2">Ventes de Matériel</th>
+                    <th class="title" rowspan="2">Cumul</th>
+                  </th>
+                </tr>
+              </tr>
+            </thead>
+            <!-- pied du tableau -->
+            <tfoot>
+              <tr>
+                <th>Playstation 3</th>
+                <th>En millions</th>
+                <th colspan="6">Cumul</th>
+              </tr>
+              <tr>
+                <th rowspan="2">Total<br>jusqu'au 31 mars 2019</th>
+                <th rowspan="2">Software</th>
+                <th colspan="6" rowspan="2">999.4(Sell-in)</th>
+              </tr>
+            </tfoot>
+
+            <!-- Corps du tableau -->
+            <tbody>
+              <tr>
+
+              </tr>
+              <tr>
+                <td>2006</td>
+                <td class="text--tab">Hardware</td>
+                <td>-</td>
+                <td>-</td>
+                <td>1.7</td>
+                <td>1.8</td>
+                <td>3.5</td>
+                <td>3.5</td>
+              </tr>
+              <tr>
+                <td>2007</td>
+                <td class="text--tab">Hardware</td>
+                <td>0.7</td>
+                <td>1.3</td>
+                <td>4.9</td>
+                <td>2.2</td>
+                <td>9.1</td>
+                <td>12.6</td>
+              </tr>
+              <tr>
+                <td>2008</td>
+                <td class="text--tab">Hardware</td>
+                <td>1.6</td>
+                <td>2.4</td>
+                <td>4.5</td>
+                <td>1.6</td>
+                <td>10.1</td>
+                <td>22.7</td>
+              </tr>
+              <tr>
+                <td>2009</td>
+                <td class="text--tab">Hardware</td>
+                <td>1.1</td>
+                <td>3.2</td>
+                <td>6.5</td>
+                <td>2.2</td>
+                <td>13</td>
+                <td>35.7</td>
+              </tr>
+              <tr>
+                <td>2010</td>
+                <td class="text--tab">Hardware</td>
+                <td>2.4</td>
+                <td>3.5</td>
+                <td>6.3</td>
+                <td>2.1</td>
+                <td>14.3</td>
+                <td>50</td>
+              </tr>
+              <tr>
+                <td>2011</td>
+                <td class="text--tab">Hardware</td>
+                <td>1.8</td>
+                <td>3.7</td>
+                <td>6.5</td>
+                <td>1.9</td>
+                <td>13.9</td>
+                <td>63.9</td>
+              </tr>
+              <tr>
+                <td>2012</td>
+                <td class="text--tab">Hardware</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td>70</td>
+                <td>Jusqu'au 5 novembre 2012</td>
+              </tr>
+              <tr>
+                <td>2013</td>
+                <td class="text--tab">Hardware</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td>80</td>
+                <td>Jusqu'au 2 novembre 2013</td>
+              </tr>
+              <tr>
+                <td>2014</td>
+                <td class="text--tab">Hardware</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>2015</td>
+                <td class="text--tab">Hardware</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>2016</td>
+                <td class="text--tab">Hardware</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td>87.4</td>
+                <td></td>
+              </tr>
+              <tr>
+                <td rowspan="3">Total<br>jusqu'au 31 mars 2017</td>
+                <td class="text--tab" rowspan="3">Hardware</td>
+                <td rowspan="3"></td>
+                <td rowspan="3"></td>
+                <td rowspan="3"></td>
+                <td rowspan="3"></td>
+                <td rowspan="3">87.4<br>(Sell-in)</td>
+                <td rowspan="3"></td>
+              </tr>
+            </tbody>
+          </table>
+          <p>La tendance démontre que depuis 2009 l'écart entre la Xbox 360 et la <span class="maj">ps</span>3 tend à se réduire en faveur de cette dernière. Si la <span class="maj">ps</span>3 supplante en nombre d'unité vendues la Xbox 360 sa principale concurrente dans la zone <span class="maj">emeaa</span> (l'Europe (l'Australie étant comptée dans la zone Europe dans le secteur des jeux vidéo), le Moyen-Orient et l'Afrique et au Japon, ce n'est pas le cas aux États-Unis où cette dernière reste toujours très populaire.
+
+          En France, au 31 mai 2014, il s'est vendu 5 millions de <span class="maj">ps</span>3 et 45 millions de jeux <span class="maj">ps</span>3, soit 9 jeux par console.</p>
+        </section>
+        <section id="prologue">
+          <h1 class="title">Prologue</h1>
+          <p>Sony a officiellement dévoilé la PlayStation 3 au public en mai 2005, lors du salon Electronic Entertainment Expo (E3), à Los Angeles. Les plans de lancement ont été annoncés un an plus tard, lors de l'E3 2006. Il était prévu une sortie mondiale quelques mois plus tard : le 11 novembre 2006 au Japon et le 17 novembre 2006 en Amérique du Nord et en Europe. En septembre 2006, la sortie européenne est cependant officiellement reportée à mars 2007 à la suite d'un retard dans la production des lasers bleus du lecteur Blu-ray. Le nombre de consoles proposées pour le jour du lancement est en conséquence réduit à 80 000 unités pour le Japon et à moins de 200 000 unités pour l'Amérique du Nord, les consoles proposées étaient des modèles 60 Go et des 20 Go. . Selon l'institut Media Create, 81 639 exemplaires de PlayStation 3 ont été vendues en 24 heures au Japon. Les quantités limitées de consoles ont engendré des effets d'opportunisme. Des observations laissent présager que des hommes d'affaires ont payé des ressortissants chinois pour acheter des consoles sans jeux afin de les revendre au prix fort. Aux États-Unis, des actes isolés de violence ont été rapportés tandis que la console s'est négociée entre 1 000 $ et 3 000 $ sur le site eBay.
+          </p>
+          <p>La PlayStation 3 est sortie en Europe le 23 mars 2007 seulement en version 60 Go, la version 20 Go s'étant peu vendue au Japon et en Amérique du Nord. Contrairement à la sortie japonaise et américaine, les quantités distribuées furent suffisantes pour répondre à la demande. En France, malgré une soirée de lancement difficile à Paris, 78 000 consoles sont vendues en deux jours sur le territoire. Les meilleures ventes ont été réalisées en Grande-Bretagne avec 173 000 machines écoulées, ce qui constitue un record pour une console de salon. Lors de la soirée de lancement londonienne, les cent premiers acheteurs de <span class="maj">ps</span>3 recevaient également un téléviseur <span class="maj">hd</span> de 46 pouces (116 centimètres) et étaient raccompagnés chez eux en taxi. Au total, cela représente 250 000 livres (370 000 euros) dépensées par Sony. Le film Casino Royale au format Blu-ray a été offert aux 500 000 premiers acheteurs à avoir enregistré leur console sur le PlayStation Network.
+          </p>
+          <p>Le jour du lancement de la console, 5 jeux sur support Blu-ray étaient disponibles au Japon, 12 aux États-Unis et 24 en Europe, auxquels s'ajoutent quelques jeux téléchargeables. Les jeux les plus en vue lors des lancements étaient Resistance: Fall of Man, MotorStorm, Virtua Fighter 5, Virtua Tennis 3, Ridge Racer 7 ou encore Formula One Championship Edition. Les meilleures ventes ont été réalisées par Resistance: Fall of Man, qui s'est écoulé à plus de 2 millions d'exemplaires. Le total des ventes de la console s'élève à 1,7 million de consoles fin 2006, 10,4 millions fin 2007, 21.1 millions fin 2008 et 50 millions le 15 avril 2011. En France, les ventes s'élèvent à 3 millions d'unités le 18 mars 2011.</p>
+        </section>
+      </main>
+  </body>
+</html>

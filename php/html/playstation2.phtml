@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="../css/play.css">
+  <title><?= $title ?></title>
+</head>
+<body>
+  <header class="entete">
+    <nav>
+      <ul class="list--links">
+        <li><a href="#composants">Composants</a></li>
+        <li><a href="#modeles">Modèles</a></li>
+        <li><a href="#accessoires">Accessoires</a></li>
+        <li><a href="#ventes">Ventes</a></li>
+        <li><a href="#prologue">Succès et lancement</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <section id="composants">
+      <h1>Architecture interne de la console</h1>
+      <p>La PlayStation 2 présente de nombreux processeurs, ce qui en fait une console assez difficile à programmer. Il est indispensable d’utiliser ces différents processeurs en parallèle pour tirer les performances maximales de la console. Dans les grandes lignes, la Playstation 2 comprend trois processeurs principaux : l'Emotion Engine, le Graphics Synthetiser et le I/O Processor. Ceux-ci jouent respectivement le rôle de processeur principal (<span class="maj">cpu</span>), de carte graphique (<span class="maj">gpu</span>) et de contrôleur d'entrée-sortie.</p>
+      <article class="">
+
+        <h1>Emotion Engine(<span class="maj">cpu</span>)</h1>
+        <p>L'Emotion Engine (<span class="maj">ee</span>) est le processeur central de la console. Il contient plusieurs sous-processeurs et circuits spécialisées, qui sont reliés par un bus interne de 128 bits, cadencé à 150MHz. Le sous-processeur principal est un processeur <span class="maj">Simd</span> 128 bits, cadencé à 300MHz. Il est secondé par deux unités de calcul vectoriel 128 bits, nommées <span class="maj">vu</span>0 et <span class="maj">vu</span>1. Le <span class="maj">ee</span>, <span class="maj">vu</span>0, <span class="maj">vu</span>1 et l'<span class="maj">iop</span> sont programmables, sur deux niveaux (microcode et macrocode) pour les unités vectorielles. Le <span class="maj">fpu</span> et les <span class="maj">vu</span>0 et <span class="maj">vu</span>1 permettent à la console d'atteindre 6,2 <span class="maj">gflops</span>. La <span class="maj">ps</span>2 est capable de calculer 66 millions de polygones nus par seconde. Outre des processeurs programmables, l'Emotion Engine comprend aussi des circuits de communication avec les entrées-sorties et la mémoire, avec la présence d'un contrôleur <span class="maj">dma</span> intégré. On peut aussi noter que l'Emotion Engine intègre un décodeur de flux <span class="maj">mpeg</span> utilisé pour la lecture des vidéos (beaucoup utilisées pour les cinématiques dans les jeux de l'époque). Il s'agit d'un circuit spécialisé, câblé directement en hardware.</p>
+
+      </article>
+      <article class="">
+        <h1>Graphic Synthetiser (<span class="maj">gpu</span>)</h1>
+        <p>Le Graphic Synthesizer (<span class="maj">gs</span>) est un circuit qui s’occupe du rendu graphique 3D (rastérisation à partir de primitives), et qui est strictement équivalent à une carte graphique. Il contient un processeur graphique (<span class="maj">gpu</span>), couplé à une petite mémoire vidéo. Le processeurs graphique comprend 16 unités programmables séparées, appelées pixels processors, cadencées à 150 MHz. La mémoire vidéo est une petite mémoire <span class="maj">dram</span> de 4 mébioctets. Le bus qui relie le processeur graphique et la mémoire vidéo a une largeur de 1024 bits en lecture et 1024 bits en écriture.</p>
+      </article>
+      <article class="">
+        <h1>I/O Processor</h1>
+        <p>Le I/O Processor (<span class="maj">iop</span>) gère les entrées/sorties et assure la compatibilité avec la PlayStation. Celui-ci communique avec divers contrôleurs esclaves, qui gèrent chacun une entrée-sortie précise. Par exemple, la console intègre une carte son appelée *Sound Processor Unit (<span class="maj">spu</span>), un lecteur <span class="maj">dvd</span>, un modem et des cartes <span class="maj">pcmia</span>. Fait intéressant, le I/O Processor intègre aussi un processeur qui exécute les jeux Playstation 1. Ce processeur, destiné à l'émulation est un processeur <span class="maj">mips</span> cadencé à 34 MHz. Il n'est pas utilisé pour l’exécution de jeux Playstation 2</p>
+      </article>
+      <h1>Spécifications techniques</h1>
+      <article class="item--comp">
+        <h1 class="title">Processeur principal : (Sony / Toshiba 64-bit <span class="maj">risc</span> "Emotion Engine")</h1>
+        <ul>
+          <li>Fréquence horloge : 294,912 MHz (299 MHz sur les modèles "slim")</li>
+          <li>Mémoire principale - 32 Mo <span class="maj">rdram</span> PC800</li>
+          <li>Bande passante <span class="maj">ram</span> : 3,2 Go / sec</li>
+        </ul>
+      </article>
+      <article class="item--comp">
+        <h1 class="title">Vidéo : (Graphics Synthesizer)</h1>
+        <ul>
+          <li>Fréquence horloge : 147,456 MHz</li>
+          <li>Mémoire <span class="maj">vram</span> Cache : 4 Mo (embarquée dans le <span class="maj">gpu</span>)</li>
+          <li>16 pixels pipelines</li>
+          <li>Taux de remplissage de 2,36 GigaPixels/sec</li>
+          <li>Nombre de polygones bruts par seconde : 66 millions</li>
+        </ul>
+      </article>
+      <article class="item--comp">
+        <h1 class="title">Son (Sony "<span class="maj">spu</span>1 + <span class="maj">spu</span>2") :</h1>
+        <ul>
+          <li>Nombre de voix : 48 canaux</li>
+          <li>Fréquence d’échantillonnage de 44,1 KHz ou 48 KHz (sélectionnable)</li>
+          <li>Mémoire audio : 2 Mo</li>
+          <li>Compatible Dolby Digital 5.1 et <span class="maj">dts</span></li>
+          <li>Le "<span class="maj">spu</span>2" étant la puce assurant la rétrocompatibilité avec le son des jeux PS1</li>
+        </ul>
+      </article>
+      <article class="item--comp">
+        <h1 class="title"><span class="maj">iop</span></h1>
+        <ul>
+          <li><span class="maj">cpu</span> Core : PlayStation <span class="maj">cpu</span>+ (R3000A)</li>
+          <li>Fréquence de l’horloge - ~34 MHz ou ~37 MHz (sélectionnable)</li>
+        </ul>
+      </article>
+      <article class="item--comp">
+        <h1 class="title">Lecteur de disque : (<span class="maj">dvd-rom</span>)</h1>
+        <ul>
+          <li>Vitesse - 24X (3600 Ko/s) en lecture CD, 4X (5400 Ko/s) en lecture <span class="maj">dvd</span></li>
+        </ul>
+      </article>
+    </section>
+    <section id="modeles">
+      <h1 class="title">Modèles de la Playstation 2</h1>
+      <article class="item--mod">
+        <h2 class="title">Premier modèle de la Playstation 2</h2>
+        <p>Voici le tout premier modèle de playstation 2 disponible à son lancement. Par contre, ce modèle ne durera pas longtemps et sera délaissé au profit du prochain modèle.</p>
+        <img src="../img/ps2-compact.jpg" alt="1er ps2">
+      </article>
+      <article class="item--mod">
+        <h2 class="title">Playstation 2 slim</h2>
+        <p>En novembre 2004, une version compacte de la PlayStation 2 est commercialisée. Il s'agit de la troisième modification importante apportée à la PS2. Elle a pour numéro de version : V12, <span class="maj">scph</span>-70000. Sony a définitivement arrêté la fabrication de l'ancien modèle PS2, et seules les versions compactes sont produites jusqu'à la fin officielle de la production, le 30 novembre 2012. À sa sortie, cette version « allégée » fut largement dénommée PStwo par la presse spécialisée, mais cette terminologie n'a cependant jamais été utilisée de façon officielle par Sony (contrairement au modèle « slim » de la PS1 qui fut, lui, bien nommé officiellement PSone par le constructeur japonais).</p>
+          <p>
+          Les changements apportés concernent la modification du design pour obtenir une machine plus compacte et nettement plus fine. Ainsi, le chargement des disques qui s'effectuait par le biais d'un tiroir sur la version précédente (chargement frontal, comme sur les platines <span class="maj">dvd</span>), s'effectue désormais sur le dessus de la console (comme sur la PS1). De dimensions 230 × 28 × 152 mm, le volume a été réduit d’environ 75 % et son poids passe de plus de 2 kg à 900 grammes. Cette modification est associée à l'externalisation du boîtier d'alimentation 220V, l'alimentation délivre une tension continue de 8.5V (pour un courant d'environ 6,5A), et de la suppression du bouton <span class="maj">on</span>/<span class="maj">off</span> (marche/arrêt) situé derrière la machine; celle-ci reste donc constamment en veille si elle n'est pas débranchée. Elle concerne également l'ajout d'un port Ethernet pour le jeu en réseau (le modèle original demandant l'ajout d'une extension). Il devient alors impossible d'installer un disque dur par les voies officielles (même si des adaptateurs à souder ont été créés, les points de connexion étant encore présents sur la carte mère).
+          </p>
+          <p>
+          Une nouvelle révision de la PlayStation 2 Slim sort en 2007 au Japon (et 2008 en Europe et aux <span class="maj">usa</span>) pour numéro de version V18 <span class="maj">scph</span>-9000x, en plus de quelques changements cosmétiques au niveau du design visant à la rendre plus moderne, elle supprime désormais le boîtier d'alimentation 220V en l'intégrant directement à l'intérieur de la console (à l'image de la <span class="maj">fat</span>). Sony en profite pour corriger plusieurs défauts de conceptions tels que des problèmes de surchauffe et la console devient également légèrement plus silencieuse. Cependant, certains utilisateurs constatent que cette révision de modèle n'est plus capable de gérer la protection des jeux PS1 protégés, les bloquant au moment de l'accès à l'écran d'accueil ; seuls les jeux PS1 non protégés restent alors jouable. Il s'agit là de la dernière révision(niveau design) de la PlayStation 2 jusqu'à l’arrêt de la production en janvier 2013.</p>
+        </article>
+        <article class="item--mod">
+          <h2 class="title">Modèle V14 (<span class="maj">scph</span>-7500X) </h2>
+          <p>Commercialisé à partir de 2005, la V14 rend impossible la soudure d'un système alternatif. Pour pallier cette absence, il est possible de brancher un disque dur externe à l'aide d’un rack <span class="maj">usb</span> et d'un logiciel spécifique.</p>
+        </article>
+        <article class="item--mod">
+          <h2 class="title">Modèle V15 (<span class="maj">scph</span>-7700X) </h2>
+          <p>Aucune info trouvé sur ce modèle à part qu'il a été commercialisé en 2006.</p>
+        </article>
+        <article class="item--mod">
+          <h2 class="title">Modèle V16 (<span class="maj">scph</span>-7900X) </h2>
+          <p>Commercialisé en 2007, cette version est plus légère de 300 grammes par rapport à la version précédente, elle ne pèse plus que 600 grammes.</p>
+        </article>
+        <article class="item--mod">
+          <h2 class="title">Modèle V17, V18 (<span class="maj">scph</span>-9000X)</h2>
+          <p>Une nouvelle version, avec cette fois-ci le transformateur électrique intégré, sort au Japon le 22 novembre 2007 pour 16 000 Yens (96 €) et aux États-Unis début 2008 pour 99 $. Disponible en trois couleurs : ceramic white, charcoal black et satin silver, elle est en vente en Europe depuis le premier semestre 2008. Une évolution de la V17 (appelée V18) est commercialisée en 2010. En 2011, l'évolution ultime de cette version de la PlayStation 2 « Slim » (et de la PS2 en général) est commercialisée, il s'agit du modèle V19(avec aucune information la concernant), peu avant l'arrêt définitif de la production de la console par Sony.</p>
+        </article>
+      </section>
+      <section id="accessoires">
+        <h1 class="title">Accessoires de la Playstation 2</h1>
+        <article class="item--access">
+          <h2 class="title">Manettes de la Playstation 2</h2>
+          <img src="../img/manette-ps2.jpg" alt="manette ps2">
+          <p>La manette de jeu officielle, la DualShock 2, reprend l'apparence globale de la DualShock. Les boutons sont désormais analogiques (sauf L3, R3 et Analog) et la manette produit deux niveaux de vibrations supplémentaires.</p>
+        </article>
+        <article class="item--access">
+          <h2 class="title">Carte mémoire Playstation 2</h2>
+          <img src="../img/card_memory-ps2.jpg" alt="carte memoire ps2">
+          <p> La carte mémoire Memory Card (8 MB), qui intègre la technologie MagicGate. On peut voir que son design est quasi-identique à celle de la playstation 1.</p>
+        </article>
+        <article class="item--access">
+          <h2 class="title">Alimentation Playstation 2</h2>
+          <img src="../img/Alim-ps2.jpg" alt="Alimentation ps2">
+        </article>
+        <article class="item--access">
+          <h2 class="title">Câbles utilisées pour la Playstation 2</h2>
+          <img src="../img/cables-ps2.jpg" alt="cable ps2">
+          <p>Même câbles que ceux de la playstation 1.</p>
+        </article>
+        <article class="item--access">
+          <h2 class="title">Micros SingStar</h2>
+          <img src="../img/micro_singstar-ps2.jpg" alt="micros SingStar">
+          <p>Des micros utilisés spécifiquement pour le jeu SingStar.</p>
+        </article>
+        <article class="item--access">
+          <h2 class="title">Les Guitares du jeu Guitar Hero</h2>
+          <img src="../img/guitarhero-ps2.jpg" alt="guitares GuitarHero">
+          <p>Des guitares utilisés spécifiquement pour le jeu GuitarHero.</p>
+        </article>
+        <article class="item--acess">
+          <h2 class="title">La caméra EyeToy</h2>
+          <img src="../img/eyetoy-ps2.jpg" alt="camera EyeToy ps2">
+          <p>L'EyeToy est une petite caméra développée par Sony qui se connecte au port <span class="maj">usb</span> de la console et permet d'interagir avec l'univers de jeu en réalisant des mouvements avec le corps. Lancé en Europe le 9 juillet 2003 en pack avec le jeu EyeToy: Play, l'accessoire connait un certain succès (plus d'un million de vente en octobre 2003) et tout une gamme de jeux spécialement conçus pour le périphérique a vu le jour. La caméra peut aussi être utilisée comme webcam sur un ordinateur grâce à sa connectique <span class="maj">usb</span> et les pilotes appropriés. </p>
+        </article>
+        <article class="item--acess">
+          <h2 class="title">Les Buzzers</h2>
+          <img src="../img/buzzers-ps2.jpg" alt="buzzers ps2">
+          <p>Ils sont vendus par quatre. Ils sont munis de cinq boutons, dont quatre de couleurs, qui permettent d'interagir avec les jeux comme dans un jeu télévisé. Cet accessoire est spécialement conçu par Sony pour le jeu Buzz!(Les souvenirs me remontent à la tête...).</p>
+        </article>
+      </section>
+      <section id="ventes">
+        <article class="item--ventes">
+
+        <h1 class="title">Ventes</h1>
+        <p>Les ventes de la PlayStation 2 sont estimées à un peu plus de 150 millions d'exemplaires en 2011. La barre des 100 millions d'unités distribuées est atteinte en novembre 2005, cinq ans et neuf mois après le lancement de la console au Japon. La PlayStation, première console de salon à avoir atteint ce cap, a mis neuf ans et six mois en comparaison. La répartition des ventes sur les trois pôles du marché est d'environ 40 % pour l'Amérique du Nord, 38 % pour l'Europe et 22 % pour le Japon (et l'Asie). En 2004, la console occupe 70 % du marché des consoles de jeu vidéo.</p>
+        <p>Le prix de la console au lancement est fixé à 39 800 ¥ au Japon, à 299 USD aux États-Unis et à 2990 francs ( 590 € en 2019 ) en France. Le prix est ramené à 2790 francs ( 549 € d'aujourd'hui) en juin 2001, à 1990 francs ( 390 € d'aujourd'hui) en septembre 2001, à 249 € en juillet 2003, à 199 € en juin 2004, à 149 € en août 2005, à 129 € en août 2006 et à 99 € en avril 2009. Fin 2010, elle est vendue en pack avec Gran Turismo 4 à 69,99 € en magasins.</p>
+        <p>
+        Le 7 novembre 2012, Sony a annoncé sur Twitter l'arrêt très prochain de la production de la PlayStation 2. La dernière usine en activité a fermé ses portes quelques heures plus tôt. La production de la console est arrêtée le 30 novembre 2012 et Sony annonce cesser toute distribution sur le territoire japonais à compter du 28 décembre 2012. Le 7 janvier 2013 la production et la distribution de la PS2 est arrêtée dans le reste du monde.</p>
+        <p>
+        En août 2018, Sony annonce via son site officiel, la fermeture au 7 septembre du service après-vente, le dernier encore actif. Ainsi, Sony clôt définitivement l'ère de la PlayStation 2.</p>
+        <!-- Tableau -->
+
+        <!-- Tableau -->
+
+        <table>
+          <!-- Titre du tableau -->
+
+          <caption>Le bilan des ventes de la Playstation 2 depuis son lancement:</caption>
+
+          <!-- En-tête du tableau -->
+
+          <thead>
+            <tr>
+              <th class="title title--tab"rowspan="3"><span class="maj" >sony</span> Gaming Division</th>
+              <th class="title title--tab" rowspan="3">En millions</th>
+              <th class="title title--tab" rowspan="3"></th>
+              <th class="title title--tab" rowspan="3"></th>
+              <th class="title title--tab" rowspan="3"></th>
+              <th class="title title--tab" rowspan="3"></th>
+              <th class="title title--tab" colspan="4">Total<br>(Année Civile)
+                <tr>
+                  <th class="title" rowspan="2">Matériel Distribué</th>
+                  <th class="title" rowspan="2">Cumul</th>
+                </th>
+              </tr>
+            </tr>
+          </thead>
+
+          <!-- pied du tableau -->
+
+          <tfoot>
+            <tr>
+              <th>Playstation 2</th>
+              <th>En millions</th>
+              <th colspan="6">Cumul</th>
+            </tr>
+            <tr>
+              <th rowspan="2">Total<br>jusqu'au 31 mars 2012</th>
+              <th rowspan="2">Software</th>
+              <th colspan="6" rowspan="2">1537(Sell-in)</th>
+            </tr>
+          </tfoot>
+
+          <!-- Corps du tableau -->
+
+          <tbody>
+            <tr>
+
+            </tr>
+            <tr>
+              <td>2000</td>
+              <td class="text--tab">Hardware</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td>6.4</td>
+              <td>6.4</td>
+            </tr>
+            <tr>
+              <td>2001</td>
+              <td class="text--tab">Hardware</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td>18.59</td>
+              <td>24.99</td>
+            </tr>
+            <tr>
+              <td>2002</td>
+              <td class="text--tab">Hardware</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td>24.6</td>
+              <td>49.59</td>
+            </tr>
+            <tr>
+              <td>2003</td>
+              <td class="text--tab">Hardware</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td>19.87</td>
+              <td>69.46</td>
+            </tr>
+            <tr>
+              <td>2004</td>
+              <td class="text--tab">Hardware</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td>11.93</td>
+              <td>81.39</td>
+            </tr>
+            <tr>
+              <td>2005</td>
+              <td class="text--tab">Hardware</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td>19.98</td>
+              <td>101.37</td>
+            </tr>
+            <tr>
+              <td>2006</td>
+              <td class="text--tab">Hardware</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td>2.32</td>
+              <td>103.69</td>
+            </tr>
+            <tr>
+              <td rowspan="3"></td>
+              <td class="text--tab" rowspan="3">En millions</td>
+              <td class="title title--tab" rowspan="3">Q1<br>(Avr-Jui)</td>
+              <td class="title title--tab" rowspan="3">Q2<br>(Jui-Sep)</td>
+              <td class="title title--tab" rowspan="3">Q3<br>(Oct-Dec)</td>
+              <td class="title title--tab" rowspan="3">Q4<br>(Jan-Mar)</td>
+              <td class="title title--tab" colspan="4">Total<br>(Année Fiscale)
+                <tr>
+                  <td class="title" rowspan="2">Ventes de matériel</td>
+                  <td class="title" rowspan="2">Cumul</td>
+                </td>
+
+            </tr>
+          </tr>
+          <tr>
+
+          </tr>
+            <tr>
+              <td>2006</td>
+              <td class="text--tab">Hardware</td>
+              <td>2.3</td>
+              <td>3.4</td>
+              <td>6.7</td>
+              <td>2.4</td>
+              <td>14.8</td>
+              <td>115.7</td>
+            </tr>
+            <tr>
+              <td>2007</td>
+              <td class="text--tab">Hardware</td>
+              <td>2.7</td>
+              <td>3.2</td>
+              <td>5.4</td>
+              <td>2.4</td>
+              <td>13.7</td>
+              <td>129.4</td>
+            </tr>
+            <tr>
+              <td>2008</td>
+              <td class="text--tab">Hardware</td>
+              <td>1.5</td>
+              <td>2.5</td>
+              <td>2.5</td>
+              <td>1.4</td>
+              <td>7.9</td>
+              <td>137.3</td>
+            </tr>
+            <tr>
+              <td>2009</td>
+              <td class="text--tab">Hardware</td>
+              <td>1.6</td>
+              <td>1.9</td>
+              <td>2.1</td>
+              <td>1.7</td>
+              <td>7.3</td>
+              <td>144.6</td>
+            </tr>
+            <tr>
+              <td>2010</td>
+              <td class="text--tab">Hardware</td>
+              <td>1.6</td>
+              <td>1.5</td>
+              <td>2.1</td>
+              <td>1.2</td>
+              <td>6.4</td>
+              <td>151.0</td>
+            </tr>
+            <tr>
+              <td>2011</td>
+              <td class="text--tab">Hardware</td>
+              <td>1.4</td>
+              <td>1.2</td>
+              <td>0.9</td>
+              <td>0.6</td>
+              <td>4.1</td>
+              <td>155.1</td>
+            </tr>
+            <tr>
+              <td rowspan="3">Total<br>jusqu'au 31 mars 2012</td>
+              <td class="text--tab" rowspan="3">Hardware</td>
+              <td rowspan="3"></td>
+              <td rowspan="3"></td>
+              <td rowspan="3"></td>
+              <td rowspan="3"></td>
+              <td rowspan="3">155.1<br>(Sell-in)</td>
+              <td rowspan="3"></td>
+            </tr>
+          </tbody>
+        </table>
+
+      </article>
+      </section>
+      <section id="prologue">
+        <article class="item--sucess">
+          <h1 class="title">Succès de la Console</h1>
+          <p>La PlayStation 2 (abrégé officiellement PS2) est une console de jeux vidéo de sixième génération commercialisée par Sony Computer Entertainment, filiale de Sony. Elle est sortie le 4 mars 2000 au Japon, le 26 octobre 2000 en Amérique du Nord, le 24 novembre 2000 en Europe et le 30 novembre 2000 en Australie. La console était en concurrence avec la Dreamcast de Sega, la GameCube de Nintendo et la Xbox de Microsoft.
+
+         La PlayStation 2 a succédé à la PlayStation dans la gamme du même nom. Sony fait sensation avec la sortie de cette console, à une époque où inclure notamment de série la lecture des <span class="maj">dvd</span> (format alors tout récent) dans ce type d'appareil était une innovation importante.
+
+         La console a connu un succès immédiat avec un million d'exemplaires vendus en quelques jours au Japon. La PlayStation 2 atteint un total de 150 millions d'exemplaires expédiés en date du 31 janvier 2011. Sony affirme qu'il existe 10 828 titres de jeu vidéo disponibles sur la console et que 1,52 milliard d'exemplaires de ces titres ont été vendus depuis le lancement de la console. Durant la fin de l'année 2009, alors que la console est commercialisée depuis près d'une décennie, Sony explique que la PlayStation 2 restera sur le marché tant qu'il y aura des acheteurs pour ses jeux malgré la sortie de la PlayStation 3 en 2006.
+
+         Plus de douze ans après son lancement, Sony annonce officiellement l'arrêt de la distribution de la PlayStation 2 au Japon le 28 décembre 2012 et dans le reste du monde le 4 janvier 2013. Avec un total de 157,68 millions d'exemplaires écoulés, elle est la console la plus vendue de l'histoire du jeu vidéo.(Légendaire Console)</p>
+        </article>
+        <article class="item--lancement">
+          <h1 class="title">Lancement de la Console</h1>
+          <p>
+          Le développement de la PlayStation 2 est mené par Ken Kutaragi. La console est officiellement annoncée au salon E3 le 11 mai 1999. L'apparence de la console et la date de sortie japonaise sont dévoilées au salon Tokyo Game Show en septembre 1999. La console devait initialement sortir en France le 26 octobre 2000 mais son lancement sera repoussé au 24 novembre 2000.</p>
+          <p>La PlayStation 2 est lancée le 4 mars 2000 au Japon, le 26 octobre 2000 en Amérique du Nord, le 24 novembre 2000 en Europe et le 30 novembre 2000 en Australie. Le lancement est marqué par l'engouement du public et des retards d'approvisionnement. Au Japon, les 980 000 consoles proposées sont parties en 48 heures seulement. Des difficultés de production amènent Sony à fournir deux fois moins de consoles que prévu pour les lancements américain et européen. En France, 150 000 unités sont proposées avant Noël et seules la moitié sont disponibles au jour du lancement (dont 50 000 unités réservées). Au 23 mars 2001, Sony a déjà écoulé 10 millions de machines dans le monde.</p>
+          <h3 class="title">Au niveau jeux vidéos:</h3>
+          <p>Au lancement de la console, dix jeux sont disponibles au Japon et vingt-neuf en Amérique du Nord, dont Dead or Alive 2, Dynasty Warriors 2, <span class="maj">fifa</span> 2001, Kessen, Madden <span class="maj">nfl</span> 2001, Midnight Club, Ridge Racer V, <span class="maj">ssx</span>, Tekken Tag Tournament, TimeSplitters et Unreal Tournament.</p>
+        </article>
+
+      </section>
+    </main>
+  </body>
+  </html>
